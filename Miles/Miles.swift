@@ -3,28 +3,29 @@
 //  Miles
 //
 //  Created by Scott Petit on 2/16/15.
-//  Copyright (c) 2015 Tastemade. All rights reserved.
+//  Copyright (c) 2015 Hecho. All rights reserved.
 //
 
 import XCTest
+import Foundation
 
 public extension String {
-    func shouldEqual(string: String, file: String = __FILE__, line: UInt = __LINE__) {
+    public func shouldEqual(string: String, file: String = __FILE__, line: UInt = __LINE__) {
         let description = "Expected \(self) to equal \(string)"
         XCTAssertEqual(self, string, description, file: file, line: line)
     }
     
-    func shouldContain(string: String, file: String = __FILE__, line: UInt = __LINE__) {
+    public func shouldContain(string: String, file: String = __FILE__, line: UInt = __LINE__) {
         let description = "Expected \(self) to contain \(string)"
         XCTAssertTrue(self.rangeOfString(string) != nil, description, file: file, line: line)
     }
     
-    func shouldHavePrefix(string: String, file: String = __FILE__, line: UInt = __LINE__) {
+    public func shouldHavePrefix(string: String, file: String = __FILE__, line: UInt = __LINE__) {
         let description = "Expected \(self) to have a prefix of \(string)"
         XCTAssertTrue(self.hasPrefix(string), description, file: file, line: line)
     }
     
-    func shouldHaveSuffix(string: String, file: String = __FILE__, line: UInt = __LINE__) {
+    public func shouldHaveSuffix(string: String, file: String = __FILE__, line: UInt = __LINE__) {
         let description = "Expected \(self) to have a suffix of \(string)"
         XCTAssertTrue(self.hasSuffix(string), description, file: file, line: line)
     }
@@ -150,11 +151,6 @@ public extension NSObject {
         let description = "Expected \(self) to not equal \(object)"
         XCTAssertNotEqual(self, object, description, file: file, line: line)
     }
-        
-    func shouldNotBeNil(file: String = __FILE__, line: UInt = __LINE__) {
-        let description = "Expected \(self) to not be nil"
-        XCTAssertNotNil(self, description, file: file, line: line)
-    }
     
     func shouldBeIdenticalTo(object: NSObject, file: String = __FILE__, line: UInt = __LINE__) {
         let description = "Expected \(self) to be identical to \(object))"
@@ -167,68 +163,58 @@ public extension NSObject {
     }
 }
 
-extension Array {
-    func shouldBeEmpty(file: String = __FILE__, line: UInt = __LINE__) {
-        let description = "Expected \(self) to be empty"
-        XCTAssertTrue(self.isEmpty, description, file: file, line: line)
-    }
+public func shouldContain<T: Equatable>(array: [T], item: T, file: String = __FILE__, line: UInt = __LINE__) {
+    let description = "Expected \(array) to contain \(item)"
+    var contains = false
     
-    func shouldContain<T: Equatable>(item: T, file: String = __FILE__, line: UInt = __LINE__) {
-        let description = "Expected \(self) to contain \(item)"
-        var contains = false
-        
-        for value in self {
-            if let value = value as? T {
-                if value == item {
-                    contains = true
-                    break
-                }
-            }
+    for value in array {
+        if value == item {
+            contains = true
+            break
         }
-        XCTAssertTrue(contains, description, file: file, line: line)
+    }
+    XCTAssertTrue(contains, description, file: file, line: line)
+}
+
+public func shouldBeEmpty<T>(array: [T],file: String = __FILE__, line: UInt = __LINE__) {
+    let description = "Expected \(array) to be empty"
+    XCTAssertTrue(array.isEmpty, description, file: file, line: line)
+}
+
+public func shouldContain<Key : Hashable, Value: Equatable>(dictionary: [Key : Value], item: Value, file: String = __FILE__, line: UInt = __LINE__) {
+    let description = "Expected \(dictionary) to contain \(item)"
+    var contains = false
+    
+    for (_, value) in dictionary {
+        if value == item {
+            contains = true
+            break
+        }
+    }
+    XCTAssertTrue(contains, description, file: file, line: line)
+}
+
+public func shouldBeEmpty<Key : Hashable, Value>(dictionary: [Key : Value],file: String = __FILE__, line: UInt = __LINE__) {
+    let description = "Expected \(dictionary) to be empty"
+    XCTAssertTrue(dictionary.isEmpty, description, file: file, line: line)
+}
+
+public func shouldBeNil<T>(optional: Optional<T>, file: String = __FILE__, line: UInt = __LINE__) {
+    let description = "Expected \(optional) to be nil"
+    switch optional {
+    case .Some(_):
+        XCTAssertTrue(false, description, file: file, line: line)
+    case .None:
+        XCTAssertTrue(true, description, file: file, line: line)
     }
 }
 
-extension Dictionary {
-    func shouldBeEmpty(file: String = __FILE__, line: UInt = __LINE__) {
-        let description = "Expected \(self) to be empty"
-        XCTAssertTrue(self.isEmpty, description, file: file, line: line)
-    }
-    
-    func shouldContain<T: Equatable>(item: T, file: String = __FILE__, line: UInt = __LINE__) {
-        let description = "Expected \(self) to contain \(item)"
-        var contains = false
-        
-        for (_, value) in self {
-            if let value = value as? T {
-                if value == item {
-                    contains = true
-                    break
-                }
-            }
-        }
-        XCTAssertTrue(contains, description, file: file, line: line)
-    }
-}
-
-extension Optional {
-    func shouldBeNil(file: String = __FILE__, line: UInt = __LINE__) {
-        let description = "Expected \(self) to be nil"
-        switch self {
-        case .Some(_):
-            XCTAssertTrue(false, description, file: file, line: line)
-        case .None:
-            XCTAssertTrue(true, description, file: file, line: line)
-        }
-    }
-    
-    func shouldNotBeNil(file: String = __FILE__, line: UInt = __LINE__) {
-        let description = "Expected \(self) to not be nil"
-        switch self {
-        case .Some(_):
-            XCTAssertTrue(true, description, file: file, line: line)
-        case .None:
-            XCTAssertTrue(false, description, file: file, line: line)
-        }
+public func shouldNotBeNil<T>(optional: Optional<T>, file: String = __FILE__, line: UInt = __LINE__) {
+    let description = "Expected \(optional) to not be nil"
+    switch optional {
+    case .Some(_):
+        XCTAssertTrue(true, description, file: file, line: line)
+    case .None:
+        XCTAssertTrue(false, description, file: file, line: line)
     }
 }

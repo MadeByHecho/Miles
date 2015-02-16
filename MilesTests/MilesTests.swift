@@ -3,11 +3,12 @@
 //  MilesTests
 //
 //  Created by Scott Petit on 2/16/15.
-//  Copyright (c) 2015 Tastemade. All rights reserved.
+//  Copyright (c) 2015 Hecho. All rights reserved.
 //
 
 import Foundation
 import XCTest
+import Miles
 
 class StringTests: XCTestCase {
     
@@ -153,11 +154,6 @@ class NSObjectTests: XCTestCase {
         five.shouldNotEqual(four)
     }
     
-    func testShouldNotBeNil() {
-        let string = NSString(format: "I'm Not Nil")
-        string.shouldNotBeNil()
-    }
-    
     func testShouldBeIdenticalTo() {
         let five = NSNumber(integer: 5)
         let anotherFive = five
@@ -174,35 +170,35 @@ class NSObjectTests: XCTestCase {
 class ArrayTests: XCTestCase {
     func testShouldBeEmpty() {
         let emptyArray = [Float]()
-        emptyArray.shouldBeEmpty()
+        shouldBeEmpty(emptyArray)
     }
-    
+
     func testShouldContain() {
         let array = [1, 2, 3, 4, 5]
-        array.shouldContain(1)
+        shouldContain(array, 1)
     }
 }
 
 class DictionaryTests: XCTestCase {
     func testShouldBeEmpty() {
         let emptyDictionary = [Int : String]()
-        emptyDictionary.shouldBeEmpty()
+        shouldBeEmpty(emptyDictionary)
     }
     
     func testShouldContain() {
         let dictionary = [1 : "one", 2 : "two"]
-        dictionary.shouldContain("one")
+        shouldContain(dictionary, "one")
     }
 }
 
 class OptionalTests: XCTestCase {
     func testShouldBeNil() {
         let optionalString: String? = nil
-        optionalString.shouldBeNil()
+        shouldBeNil(optionalString)
     }
     
     func testShouldNotBeNil() {
         let optionalString: String? = "I'm a real string"
-        optionalString.shouldNotBeNil()
+        shouldNotBeNil(optionalString)
     }
 }
