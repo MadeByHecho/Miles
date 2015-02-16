@@ -1,5 +1,5 @@
 # Miles
-** A thin wrapper around XCTest Marcos to make tests just a bit more readable. **
+**A thin wrapper around XCTest Marcos to make tests just a bit more readable.**
 
 Miles is a simple solution to an XCTest problem.  With other Swift testing solutions [Quick](https://github.com/Quick/Quick) and [Nimble](https://github.com/Quick/Nimble) you're forced to trade solid Xcode Tools integration for readability and ease (Authors Note. Quick and Nimble are both amazing and you should definitely check them out).  With Miles you get solid Xcode integration, such as the ability to run single tests from the Xcode gutter, but still excellent readability.
 
