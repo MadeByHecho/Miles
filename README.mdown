@@ -31,7 +31,6 @@ Miles.swift defines all the extensions, so make sure it's either included in you
 
 ```swift
 func testThatFivePlusFiveEqualsTen() {
-	
 	10.shouldEqual(5 + 5)
 }
 ```
