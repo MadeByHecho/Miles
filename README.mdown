@@ -61,8 +61,8 @@ Miles currently provides extensions for many of the swift standard types includi
 
 Because Swift doesn't currently support public extensions on generic types, Miles provides Global functions to validate Array, Dictionary and Optional types.
 
-## Instalation
-### The following instructions were taken and repurposed from [Quick](https://github.com/Quick/Quick) because it is the best resource I've seen for integrating with a Test Target.  As such please note that instead of dragging in Quick and Nimble you'll be dragging in Miles.
+## Installation
+The following instructions were taken and repurposed from [Quick](https://github.com/Quick/Quick) because it is the best resource I've seen for integrating with a Test Target.  As such please note that instead of dragging in Quick and Nimble you'll be dragging in Miles.
 
 
 ## How to Install Miles using [Carthage](https://github.com/Carthage/Carthage)
