@@ -8,7 +8,7 @@ Miles is a simple solution to an XCTest problem.  With other Swift testing solut
 
 It feels like every 6 months or so I hop on the Quick/Kiwi bandwagon (because of my frustration with the readability of XCTest) only to grow frustrated with some of the limitations that Xcode imposes.  Miles is the simplest solution to the problem that I could come up with.  
 
-Miles is named after Darius Miles, a former professional basketball player who also had a role in the 2004 Movie 'The Perfect Score', where he and 5 students try to steal the SAT.
+Miles is named after [Darius Miles](http://en.wikipedia.org/wiki/Darius_Miles), a former professional basketball player who also had a role in the 2004 Movie 'The Perfect Score', where he and 5 students try to steal the SAT.
 
 ## Background
 
