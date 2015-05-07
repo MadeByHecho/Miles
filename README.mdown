@@ -18,7 +18,7 @@ Apple's Xcode includes the XCTest framework, which provides assertion macros to 
 XCTAssertEqual(1 + 1, 2, "expected one plus one to equal two")
 ```
 
-In a more robust testing framework like Quick/Nimble you get the much more readable:
+In a more robust matcher framework like [Nimble](https://github.com/quick/nimble) you get the much more readable:
 
 ```swift
 expect(1 + 1).to(equal(2))
