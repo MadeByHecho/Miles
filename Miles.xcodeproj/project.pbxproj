@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D202D67C1B0DB33500F957C7 /* Miles-Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = D202D67B1B0DB33500F957C7 /* Miles-Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D202D6821B0DB33500F957C7 /* Miles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D202D6771B0DB33500F957C7 /* Miles.framework */; };
+		D202D6891B0DB33500F957C7 /* Miles_MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202D6881B0DB33500F957C7 /* Miles_MacTests.swift */; };
+		D202D6901B0DB35700F957C7 /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208801B1A92020B00C6D7AC /* Miles.swift */; };
+		D202D6911B0DB35B00F957C7 /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20880131A9201C100C6D7AC /* MilesTests.swift */; };
 		D20880071A9201C100C6D7AC /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20880061A9201C100C6D7AC /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D208801E1A9202BF00C6D7AC /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20880131A9201C100C6D7AC /* MilesTests.swift */; };
 		D24F59791A920FC10055C9F1 /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208801B1A92020B00C6D7AC /* Miles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D202D6831B0DB33500F957C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D20AD9521A91D15D0043E5C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D202D6761B0DB33500F957C7;
+			remoteInfo = "Miles-Mac";
+		};
 		D20880221A920EC600C6D7AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D20AD9521A91D15D0043E5C5 /* Project object */;
@@ -23,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D202D6771B0DB33500F957C7 /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D202D67A1B0DB33500F957C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D202D67B1B0DB33500F957C7 /* Miles-Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Miles-Mac.h"; sourceTree = "<group>"; };
+		D202D6811B0DB33500F957C7 /* Miles-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Miles-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D202D6871B0DB33500F957C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D202D6881B0DB33500F957C7 /* Miles_MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Miles_MacTests.swift; sourceTree = "<group>"; };
 		D20880021A9201C100C6D7AC /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20880051A9201C100C6D7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20880061A9201C100C6D7AC /* Miles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Miles.h; sourceTree = "<group>"; };
@@ -33,6 +51,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D202D6731B0DB33500F957C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D202D67E1B0DB33500F957C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D202D6821B0DB33500F957C7 /* Miles.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2087FFE1A9201C100C6D7AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,6 +83,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D202D6781B0DB33500F957C7 /* Miles-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				D202D67B1B0DB33500F957C7 /* Miles-Mac.h */,
+				D202D6791B0DB33500F957C7 /* Supporting Files */,
+			);
+			path = "Miles-Mac";
+			sourceTree = "<group>";
+		};
+		D202D6791B0DB33500F957C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D202D67A1B0DB33500F957C7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D202D6851B0DB33500F957C7 /* Miles-MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				D202D6881B0DB33500F957C7 /* Miles_MacTests.swift */,
+				D202D6861B0DB33500F957C7 /* Supporting Files */,
+			);
+			path = "Miles-MacTests";
+			sourceTree = "<group>";
+		};
+		D202D6861B0DB33500F957C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D202D6871B0DB33500F957C7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D20880031A9201C100C6D7AC /* Miles */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +157,8 @@
 			children = (
 				D20880031A9201C100C6D7AC /* Miles */,
 				D20880101A9201C100C6D7AC /* MilesTests */,
+				D202D6781B0DB33500F957C7 /* Miles-Mac */,
+				D202D6851B0DB33500F957C7 /* Miles-MacTests */,
 				D20AD95B1A91D15D0043E5C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +168,8 @@
 			children = (
 				D20AD96F1A91D15E0043E5C5 /* MilesTests.xctest */,
 				D20880021A9201C100C6D7AC /* Miles.framework */,
+				D202D6771B0DB33500F957C7 /* Miles.framework */,
+				D202D6811B0DB33500F957C7 /* Miles-MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +177,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		D202D6741B0DB33500F957C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D202D67C1B0DB33500F957C7 /* Miles-Mac.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2087FFF1A9201C100C6D7AC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,6 +196,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D202D6761B0DB33500F957C7 /* Miles-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D202D68E1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-Mac" */;
+			buildPhases = (
+				D202D6721B0DB33500F957C7 /* Sources */,
+				D202D6731B0DB33500F957C7 /* Frameworks */,
+				D202D6741B0DB33500F957C7 /* Headers */,
+				D202D6751B0DB33500F957C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Miles-Mac";
+			productName = "Miles-Mac";
+			productReference = D202D6771B0DB33500F957C7 /* Miles.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D202D6801B0DB33500F957C7 /* Miles-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D202D68F1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-MacTests" */;
+			buildPhases = (
+				D202D67D1B0DB33500F957C7 /* Sources */,
+				D202D67E1B0DB33500F957C7 /* Frameworks */,
+				D202D67F1B0DB33500F957C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D202D6841B0DB33500F957C7 /* PBXTargetDependency */,
+			);
+			name = "Miles-MacTests";
+			productName = "Miles-MacTests";
+			productReference = D202D6811B0DB33500F957C7 /* Miles-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D20880011A9201C100C6D7AC /* Miles */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D20880151A9201C100C6D7AC /* Build configuration list for PBXNativeTarget "Miles" */;
@@ -162,6 +277,12 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Tastemade;
 				TargetAttributes = {
+					D202D6761B0DB33500F957C7 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					D202D6801B0DB33500F957C7 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 					D20880011A9201C100C6D7AC = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -186,11 +307,27 @@
 			targets = (
 				D20880011A9201C100C6D7AC /* Miles */,
 				D20AD96E1A91D15E0043E5C5 /* MilesTests */,
+				D202D6761B0DB33500F957C7 /* Miles-Mac */,
+				D202D6801B0DB33500F957C7 /* Miles-MacTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D202D6751B0DB33500F957C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D202D67F1B0DB33500F957C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D20880001A9201C100C6D7AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,6 +345,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D202D6721B0DB33500F957C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D202D6901B0DB35700F957C7 /* Miles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D202D67D1B0DB33500F957C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D202D6911B0DB35B00F957C7 /* MilesTests.swift in Sources */,
+				D202D6891B0DB33500F957C7 /* Miles_MacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2087FFD1A9201C100C6D7AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +381,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D202D6841B0DB33500F957C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D202D6761B0DB33500F957C7 /* Miles-Mac */;
+			targetProxy = D202D6831B0DB33500F957C7 /* PBXContainerItemProxy */;
+		};
 		D20880231A920EC600C6D7AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D20880011A9201C100C6D7AC /* Miles */;
@@ -235,6 +394,94 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D202D68A1B0DB33500F957C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Miles-Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = Miles;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D202D68B1B0DB33500F957C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Miles-Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = Miles;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D202D68C1B0DB33500F957C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Miles-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D202D68D1B0DB33500F957C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Miles-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		D20880161A9201C100C6D7AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -410,6 +657,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D202D68E1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D202D68A1B0DB33500F957C7 /* Debug */,
+				D202D68B1B0DB33500F957C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D202D68F1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D202D68C1B0DB33500F957C7 /* Debug */,
+				D202D68D1B0DB33500F957C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D20880151A9201C100C6D7AC /* Build configuration list for PBXNativeTarget "Miles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
