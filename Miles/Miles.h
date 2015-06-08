@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import <XCTest/XCTest.h>
-@import XCTest;
+#import <XCTest/XCTest.h>
 
 //! Project version number for Miles.
 FOUNDATION_EXPORT double MilesVersionNumber;
