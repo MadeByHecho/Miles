@@ -35,14 +35,14 @@
 
 /* Begin PBXFileReference section */
 		D202D6771B0DB33500F957C7 /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D20880021A9201C100C6D7AC /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20880021A9201C100C6D7AC /* Miles-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Miles-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20880051A9201C100C6D7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20880061A9201C100C6D7AC /* Miles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Miles.h; sourceTree = "<group>"; };
 		D20880121A9201C100C6D7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20880131A9201C100C6D7AC /* MilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilesTests.swift; sourceTree = "<group>"; };
 		D208801B1A92020B00C6D7AC /* Miles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Miles.swift; sourceTree = "<group>"; };
-		D20AD96F1A91D15E0043E5C5 /* MilesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MilesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2AB201A1B336E8500807B22 /* Miles-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Miles-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20AD96F1A91D15E0043E5C5 /* Miles-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Miles-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AB201A1B336E8500807B22 /* Miles-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Miles-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +125,10 @@
 		D20AD95B1A91D15D0043E5C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D20AD96F1A91D15E0043E5C5 /* MilesTests.xctest */,
-				D20880021A9201C100C6D7AC /* Miles.framework */,
+				D20AD96F1A91D15E0043E5C5 /* Miles-iOSTests.xctest */,
+				D20880021A9201C100C6D7AC /* Miles-iOS.framework */,
 				D202D6771B0DB33500F957C7 /* Miles.framework */,
-				D2AB201A1B336E8500807B22 /* Miles-MacTests.xctest */,
+				D2AB201A1B336E8500807B22 /* Miles-OSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,9 +155,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D202D6761B0DB33500F957C7 /* Miles-Mac */ = {
+		D202D6761B0DB33500F957C7 /* Miles-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D202D68E1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-Mac" */;
+			buildConfigurationList = D202D68E1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-OSX" */;
 			buildPhases = (
 				D202D6721B0DB33500F957C7 /* Sources */,
 				D202D6731B0DB33500F957C7 /* Frameworks */,
@@ -168,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = "Miles-Mac";
+			name = "Miles-OSX";
 			productName = "Miles-Mac";
 			productReference = D202D6771B0DB33500F957C7 /* Miles.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D20880011A9201C100C6D7AC /* Miles */ = {
+		D20880011A9201C100C6D7AC /* Miles-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D20880151A9201C100C6D7AC /* Build configuration list for PBXNativeTarget "Miles" */;
+			buildConfigurationList = D20880151A9201C100C6D7AC /* Build configuration list for PBXNativeTarget "Miles-iOS" */;
 			buildPhases = (
 				D2087FFD1A9201C100C6D7AC /* Sources */,
 				D2087FFE1A9201C100C6D7AC /* Frameworks */,
@@ -186,14 +186,14 @@
 			);
 			dependencies = (
 			);
-			name = Miles;
+			name = "Miles-iOS";
 			productName = Miles;
-			productReference = D20880021A9201C100C6D7AC /* Miles.framework */;
+			productReference = D20880021A9201C100C6D7AC /* Miles-iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D20AD96E1A91D15E0043E5C5 /* MilesTests */ = {
+		D20AD96E1A91D15E0043E5C5 /* Miles-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D20AD97C1A91D15E0043E5C5 /* Build configuration list for PBXNativeTarget "MilesTests" */;
+			buildConfigurationList = D20AD97C1A91D15E0043E5C5 /* Build configuration list for PBXNativeTarget "Miles-iOSTests" */;
 			buildPhases = (
 				D20AD96B1A91D15E0043E5C5 /* Sources */,
 				D20AD96C1A91D15E0043E5C5 /* Frameworks */,
@@ -204,14 +204,14 @@
 			dependencies = (
 				D20880231A920EC600C6D7AC /* PBXTargetDependency */,
 			);
-			name = MilesTests;
+			name = "Miles-iOSTests";
 			productName = MilesTests;
-			productReference = D20AD96F1A91D15E0043E5C5 /* MilesTests.xctest */;
+			productReference = D20AD96F1A91D15E0043E5C5 /* Miles-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D2AB20191B336E8500807B22 /* Miles-MacTests */ = {
+		D2AB20191B336E8500807B22 /* Miles-OSXTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2AB20221B336E8500807B22 /* Build configuration list for PBXNativeTarget "Miles-MacTests" */;
+			buildConfigurationList = D2AB20221B336E8500807B22 /* Build configuration list for PBXNativeTarget "Miles-OSXTests" */;
 			buildPhases = (
 				D2AB20161B336E8500807B22 /* Sources */,
 				D2AB20171B336E8500807B22 /* Frameworks */,
@@ -222,9 +222,9 @@
 			dependencies = (
 				D2AB20211B336E8500807B22 /* PBXTargetDependency */,
 			);
-			name = "Miles-MacTests";
+			name = "Miles-OSXTests";
 			productName = "Miles-Mac Tests";
-			productReference = D2AB201A1B336E8500807B22 /* Miles-MacTests.xctest */;
+			productReference = D2AB201A1B336E8500807B22 /* Miles-OSXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -265,10 +265,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D20880011A9201C100C6D7AC /* Miles */,
-				D20AD96E1A91D15E0043E5C5 /* MilesTests */,
-				D202D6761B0DB33500F957C7 /* Miles-Mac */,
-				D2AB20191B336E8500807B22 /* Miles-MacTests */,
+				D20880011A9201C100C6D7AC /* Miles-iOS */,
+				D20AD96E1A91D15E0043E5C5 /* Miles-iOSTests */,
+				D202D6761B0DB33500F957C7 /* Miles-OSX */,
+				D2AB20191B336E8500807B22 /* Miles-OSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -342,12 +342,12 @@
 /* Begin PBXTargetDependency section */
 		D20880231A920EC600C6D7AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D20880011A9201C100C6D7AC /* Miles */;
+			target = D20880011A9201C100C6D7AC /* Miles-iOS */;
 			targetProxy = D20880221A920EC600C6D7AC /* PBXContainerItemProxy */;
 		};
 		D2AB20211B336E8500807B22 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D202D6761B0DB33500F957C7 /* Miles-Mac */;
+			target = D202D6761B0DB33500F957C7 /* Miles-OSX */;
 			targetProxy = D2AB20201B336E8500807B22 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -557,11 +557,7 @@
 		D20AD97D1A91D15E0043E5C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -577,18 +573,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tastemade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "";
-				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		D20AD97E1A91D15E0043E5C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -600,7 +592,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tastemade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "";
-				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -635,7 +627,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D202D68E1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-Mac" */ = {
+		D202D68E1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D202D68A1B0DB33500F957C7 /* Debug */,
@@ -644,7 +636,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D20880151A9201C100C6D7AC /* Build configuration list for PBXNativeTarget "Miles" */ = {
+		D20880151A9201C100C6D7AC /* Build configuration list for PBXNativeTarget "Miles-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D20880161A9201C100C6D7AC /* Debug */,
@@ -662,7 +654,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D20AD97C1A91D15E0043E5C5 /* Build configuration list for PBXNativeTarget "MilesTests" */ = {
+		D20AD97C1A91D15E0043E5C5 /* Build configuration list for PBXNativeTarget "Miles-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D20AD97D1A91D15E0043E5C5 /* Debug */,
@@ -671,13 +663,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2AB20221B336E8500807B22 /* Build configuration list for PBXNativeTarget "Miles-MacTests" */ = {
+		D2AB20221B336E8500807B22 /* Build configuration list for PBXNativeTarget "Miles-OSXTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2AB20231B336E8500807B22 /* Debug */,
 				D2AB20241B336E8500807B22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
