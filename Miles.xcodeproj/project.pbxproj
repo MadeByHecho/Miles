@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		D202D6771B0DB33500F957C7 /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D20880021A9201C100C6D7AC /* Miles-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Miles-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20880021A9201C100C6D7AC /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20880051A9201C100C6D7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20880061A9201C100C6D7AC /* Miles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Miles.h; sourceTree = "<group>"; };
 		D20880121A9201C100C6D7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				D20AD96F1A91D15E0043E5C5 /* Miles-iOSTests.xctest */,
-				D20880021A9201C100C6D7AC /* Miles-iOS.framework */,
+				D20880021A9201C100C6D7AC /* Miles.framework */,
 				D202D6771B0DB33500F957C7 /* Miles.framework */,
 				D2AB201A1B336E8500807B22 /* Miles-OSXTests.xctest */,
 			);
@@ -188,7 +188,7 @@
 			);
 			name = "Miles-iOS";
 			productName = Miles;
-			productReference = D20880021A9201C100C6D7AC /* Miles-iOS.framework */;
+			productReference = D20880021A9201C100C6D7AC /* Miles.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D20AD96E1A91D15E0043E5C5 /* Miles-iOSTests */ = {
@@ -437,8 +437,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_MODULE_NAME = Miles;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = Miles;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -464,8 +464,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_MODULE_NAME = Miles;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = Miles;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
