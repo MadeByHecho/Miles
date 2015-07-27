@@ -182,6 +182,11 @@ class ArrayTests: XCTestCase {
         let array = [1, 2, 3, 4, 5]
         array.shouldContain(1)
     }
+    
+    func testShouldContainItems() {
+        let array = [1, 2, 3, 4, 5]
+        array.shouldContain([1, 3, 5])
+    }
 }
 
 class DictionaryTests: XCTestCase {
@@ -193,6 +198,11 @@ class DictionaryTests: XCTestCase {
     func testShouldContain() {
         let dictionary = [1 : "one", 2 : "two"]
         dictionary.shouldContain("one")
+    }
+    
+    func testShouldContainItems() {
+        let dictionary = [1 : "one", 2 : "two"]
+        dictionary.shouldContain(["one", "two"])
     }
 }
 
