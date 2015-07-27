@@ -130,12 +130,6 @@ public extension CollectionType where Generator.Element : Equatable {
         }
         XCTAssertTrue(contains, message, file: file, line: line)
     }
-    
-    func shouldContain(items: [Self.Generator.Element], file: String = __FILE__, line: UInt = __LINE__) {
-        for item in items {
-            shouldContain(item)
-        }
-    }
 }
 
 public extension CollectionType {
@@ -157,12 +151,6 @@ public extension Dictionary where Value : Equatable {
             }
         }
         XCTAssertTrue(contains, message, file: file, line: line)
-    }
-    
-    func shouldContain(items: [Value], file: String = __FILE__, line: UInt = __LINE__) {
-        for item in items {
-            shouldContain(item)
-        }
     }
 }
 

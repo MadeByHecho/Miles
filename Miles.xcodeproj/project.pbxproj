@@ -356,7 +356,6 @@
 		D202D68A1B0DB33500F957C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -380,7 +379,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Miles;
-				PROVISIONING_PROFILE = "c9c235d3-d505-4b15-a0d6-ace8fcf4b88d";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -391,7 +389,6 @@
 		D202D68B1B0DB33500F957C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -411,7 +408,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Miles;
-				PROVISIONING_PROFILE = "c9c235d3-d505-4b15-a0d6-ace8fcf4b88d";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -443,7 +439,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = Miles;
-				PROVISIONING_PROFILE = "c9c235d3-d505-4b15-a0d6-ace8fcf4b88d";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -471,7 +466,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = Miles;
-				PROVISIONING_PROFILE = "c9c235d3-d505-4b15-a0d6-ace8fcf4b88d";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
