@@ -356,7 +356,8 @@
 		D202D68A1B0DB33500F957C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -380,7 +381,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Miles;
-				PROVISIONING_PROFILE = "c9c235d3-d505-4b15-a0d6-ace8fcf4b88d";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -391,7 +392,8 @@
 		D202D68B1B0DB33500F957C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -411,7 +413,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Miles;
-				PROVISIONING_PROFILE = "c9c235d3-d505-4b15-a0d6-ace8fcf4b88d";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -443,7 +445,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = Miles;
-				PROVISIONING_PROFILE = "c9c235d3-d505-4b15-a0d6-ace8fcf4b88d";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -471,7 +473,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = Miles;
-				PROVISIONING_PROFILE = "c9c235d3-d505-4b15-a0d6-ace8fcf4b88d";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -541,7 +543,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
