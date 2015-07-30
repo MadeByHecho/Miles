@@ -1,5 +1,5 @@
 before_script:
-  - gem install xcpretty; carthage bootstrap;
+  - gem install xcpretty;
 
 types:
   - test
