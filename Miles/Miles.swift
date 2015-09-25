@@ -114,6 +114,11 @@ public extension NSObject {
         XCTAssertTrue(self === object, message, file: file, line: line)
     }
     
+    func shouldBeMemberOfClass(aClass: AnyClass, file: String = __FILE__, line: UInt = __LINE__) {
+        let message = "Expected \(self) to be member of Class \(aClass)"
+        XCTAssertTrue(self.isMemberOfClass(aClass), message, file: file, line: line)
+    }
+    
     func shouldBeKindOfClass(aClass: AnyClass, file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to be kind of Class \(aClass)"
         XCTAssertTrue(self.isKindOfClass(aClass), message, file: file, line: line)
