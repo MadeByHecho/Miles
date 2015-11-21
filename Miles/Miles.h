@@ -2,12 +2,11 @@
 //  Miles.h
 //  Miles
 //
-//  Created by Scott Petit on 2/16/15.
-//  Copyright (c) 2015 Tastemade. All rights reserved.
+//  Created by Scott Petit on 11/21/15.
+//  Copyright © 2015 Tastemade. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <XCTest/XCTest.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for Miles.
 FOUNDATION_EXPORT double MilesVersionNumber;
