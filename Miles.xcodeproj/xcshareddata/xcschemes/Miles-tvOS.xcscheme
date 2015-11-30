@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D2597A021C0114FC0059638D"
-               BuildableName = "Miles-tvOS.framework"
+               BuildableName = "Miles.framework"
                BlueprintName = "Miles-tvOS"
                ReferencedContainer = "container:Miles.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2597A021C0114FC0059638D"
-            BuildableName = "Miles-tvOS.framework"
+            BuildableName = "Miles.framework"
             BlueprintName = "Miles-tvOS"
             ReferencedContainer = "container:Miles.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2597A021C0114FC0059638D"
-            BuildableName = "Miles-tvOS.framework"
+            BuildableName = "Miles.framework"
             BlueprintName = "Miles-tvOS"
             ReferencedContainer = "container:Miles.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2597A021C0114FC0059638D"
-            BuildableName = "Miles-tvOS.framework"
+            BuildableName = "Miles.framework"
             BlueprintName = "Miles-tvOS"
             ReferencedContainer = "container:Miles.xcodeproj">
          </BuildableReference>
