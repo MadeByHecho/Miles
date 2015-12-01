@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		D202D6901B0DB35700F957C7 /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208801B1A92020B00C6D7AC /* Miles.swift */; };
 		D20880071A9201C100C6D7AC /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20880061A9201C100C6D7AC /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D208801E1A9202BF00C6D7AC /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20880131A9201C100C6D7AC /* MilesTests.swift */; };
 		D24F59791A920FC10055C9F1 /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208801B1A92020B00C6D7AC /* Miles.swift */; };
 		D2597A061C0114FC0059638D /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D2597A051C0114FC0059638D /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2597A0D1C0114FC0059638D /* Miles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2597A031C0114FC0059638D /* Miles.framework */; };
 		D2597A121C0114FC0059638D /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2597A111C0114FC0059638D /* MilesTests.swift */; };
 		D2597A1B1C0116010059638D /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208801B1A92020B00C6D7AC /* Miles.swift */; };
 		D2AB201F1B336E8500807B22 /* Miles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D202D6771B0DB33500F957C7 /* Miles.framework */; };
-		D2AB20251B336E8900807B22 /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20880131A9201C100C6D7AC /* MilesTests.swift */; };
 		D2F3A00B1B0E11B900986587 /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20880061A9201C100C6D7AC /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -445,7 +443,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D208801E1A9202BF00C6D7AC /* MilesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +466,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2AB20251B336E8900807B22 /* MilesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,6 +883,7 @@
 				D2597A151C0114FC0059638D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2597A191C0114FC0059638D /* Build configuration list for PBXNativeTarget "MilesTests-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -895,6 +892,7 @@
 				D2597A171C0114FC0059638D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2AB20221B336E8500807B22 /* Build configuration list for PBXNativeTarget "MilesTests-OSX" */ = {
 			isa = XCConfigurationList;
