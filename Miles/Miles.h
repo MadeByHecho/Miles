@@ -6,7 +6,7 @@
 //  Copyright © 2015 Tastemade. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Miles.
 FOUNDATION_EXPORT double MilesVersionNumber;
