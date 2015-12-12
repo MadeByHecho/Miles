@@ -8,4 +8,5 @@ Miles:
   type: test
   script:
     - xcodebuild -scheme Miles-OSX test | xcpretty -c
-    - xcodebuild -verbose -scheme Miles-iOS -destination "platform=iOS Simulator,name=iPhone 6 Plus,OS=9.0" test | xcpretty -c
+    - xcodebuild -verbose -scheme Miles-iOS -destination "platform=iOS Simulator,name=iPhone 6 Plus,OS=9.2" test | xcpretty -c
+    - xcodebuild -verbose -scheme Miles-tvOS -destination "platform=tvOS Simulator,name=Apple TV 1080p" test | xcpretty -c
