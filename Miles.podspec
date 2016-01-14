@@ -25,7 +25,7 @@ It feels like every 6 months or so I hop on the Quick/Kiwi bandwagon (because of
 
   # ――― Author Information ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.author             = { "Scott Petit" => "scott@hecho.io" }
-  s.social_media_url   = "http://twitter.com/@ScottPetit"
+  s.social_media_url   = "http://twitter.com/ScottPetit"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.ios.deployment_target = "8.0"
