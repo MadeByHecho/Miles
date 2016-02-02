@@ -29,7 +29,7 @@ public extension Comparable {
             XCTAssertTrue(false, message)
         }
     }
-    
+
     public func shouldBeGreaterThanOrEqualTo<T: Comparable>(other: T, file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to be greater than or equal to \(other)"
         if let other = other as? Self {
@@ -38,7 +38,7 @@ public extension Comparable {
             XCTAssertTrue(false, message)
         }
     }
-    
+
     public func shouldBeLessThan<T: Comparable>(other: T, file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to be less than \(other)"
         if let other = other as? Self {
@@ -47,7 +47,7 @@ public extension Comparable {
             XCTAssertTrue(false, message)
         }
     }
-    
+
     public func shouldBeLessThanOrEqualTo<T: Comparable>(other: T, file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to be less than or Equal to \(other)"
         if let other = other as? Self {
@@ -74,12 +74,12 @@ public extension String {
         let message = "Expected \(self) to contain \(string)"
         XCTAssertTrue(self.rangeOfString(string) != nil, message, file: file, line: line)
     }
-    
+
     public func shouldHavePrefix(string: String, file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to have a prefix of \(string)"
         XCTAssertTrue(self.hasPrefix(string), message, file: file, line: line)
     }
-    
+
     public func shouldHaveSuffix(string: String, file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to have a suffix of \(string)"
         XCTAssertTrue(self.hasSuffix(string), message, file: file, line: line)
@@ -91,7 +91,7 @@ public extension Bool {
         let message = "Expected \(self) to be true"
         XCTAssertTrue(self, message, file: file, line: line)
     }
-    
+
     func shouldBeFalse(file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to be false"
         XCTAssertFalse(self, message, file: file, line: line)
@@ -103,22 +103,22 @@ public extension NSObject {
         let message = "Expected \(self) to equal \(object)"
         XCTAssertEqual(self, object, message, file: file, line: line)
     }
-    
+
     func shouldNotEqual(object: NSObject, file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to not equal \(object)"
         XCTAssertNotEqual(self, object, message, file: file, line: line)
     }
-    
+
     func shouldBeIdenticalTo(object: NSObject, file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to be identical to \(object))"
         XCTAssertTrue(self === object, message, file: file, line: line)
     }
-    
+
     func shouldBeMemberOfClass(aClass: AnyClass, file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to be member of Class \(aClass)"
         XCTAssertTrue(self.isMemberOfClass(aClass), message, file: file, line: line)
     }
-    
+
     func shouldBeKindOfClass(aClass: AnyClass, file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to be kind of Class \(aClass)"
         XCTAssertTrue(self.isKindOfClass(aClass), message, file: file, line: line)
@@ -129,7 +129,7 @@ public extension CollectionType where Generator.Element : Equatable {
     func shouldContain(item: Self.Generator.Element, file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to contain \(item)"
         var contains = false
-        
+
         if let _ = indexOf(item) {
             contains = true
         }
@@ -148,7 +148,7 @@ public extension Dictionary where Value : Equatable {
     func shouldContain(item: Value, file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to contain \(item)"
         var contains = false
-        
+
         for value in values {
             if value == item {
                 contains = true
@@ -169,7 +169,7 @@ public extension Optional {
             XCTAssertTrue(true, message, file: file, line: line)
         }
     }
-    
+
     public func shouldNotBeNil(file: String = __FILE__, line: UInt = __LINE__) {
         let message = "Expected \(self) to not be nil"
         switch self {
