@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		D202D6901B0DB35700F957C7 /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208801B1A92020B00C6D7AC /* Miles.swift */; };
 		D20880071A9201C100C6D7AC /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20880061A9201C100C6D7AC /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D22EA34F1C63749100611422 /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20880061A9201C100C6D7AC /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D22EA3501C63749E00611422 /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20880131A9201C100C6D7AC /* MilesTests.swift */; };
 		D24F59791A920FC10055C9F1 /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208801B1A92020B00C6D7AC /* Miles.swift */; };
-		D2597A061C0114FC0059638D /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D2597A051C0114FC0059638D /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2597A0D1C0114FC0059638D /* Miles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2597A031C0114FC0059638D /* Miles.framework */; };
-		D2597A121C0114FC0059638D /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2597A111C0114FC0059638D /* MilesTests.swift */; };
 		D2597A1B1C0116010059638D /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208801B1A92020B00C6D7AC /* Miles.swift */; };
 		D2AB201F1B336E8500807B22 /* Miles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D202D6771B0DB33500F957C7 /* Miles.framework */; };
 		D2D339CD1C1CA9B1009300DB /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20880131A9201C100C6D7AC /* MilesTests.swift */; };
@@ -54,11 +54,7 @@
 		D208801B1A92020B00C6D7AC /* Miles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Miles.swift; sourceTree = "<group>"; };
 		D20AD96F1A91D15E0043E5C5 /* MilesTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2597A031C0114FC0059638D /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2597A051C0114FC0059638D /* Miles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Miles.h; sourceTree = "<group>"; };
-		D2597A071C0114FC0059638D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2597A0C1C0114FC0059638D /* MilesTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2597A111C0114FC0059638D /* MilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilesTests.swift; sourceTree = "<group>"; };
-		D2597A131C0114FC0059638D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2AB201A1B336E8500807B22 /* MilesTests-OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -150,8 +146,6 @@
 			children = (
 				D20880031A9201C100C6D7AC /* Miles */,
 				D20880101A9201C100C6D7AC /* MilesTests */,
-				D2597A041C0114FC0059638D /* Miles */,
-				D2597A101C0114FC0059638D /* MilesTests */,
 				D20AD95B1A91D15D0043E5C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -167,24 +161,6 @@
 				D2597A0C1C0114FC0059638D /* MilesTests-tvOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D2597A041C0114FC0059638D /* Miles */ = {
-			isa = PBXGroup;
-			children = (
-				D2597A051C0114FC0059638D /* Miles.h */,
-				D2597A071C0114FC0059638D /* Info.plist */,
-			);
-			path = Miles;
-			sourceTree = "<group>";
-		};
-		D2597A101C0114FC0059638D /* MilesTests */ = {
-			isa = PBXGroup;
-			children = (
-				D2597A111C0114FC0059638D /* MilesTests.swift */,
-				D2597A131C0114FC0059638D /* Info.plist */,
-			);
-			path = MilesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +186,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2597A061C0114FC0059638D /* Miles.h in Headers */,
+				D22EA34F1C63749100611422 /* Miles.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2597A121C0114FC0059638D /* MilesTests.swift in Sources */,
+				D22EA3501C63749E00611422 /* MilesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
