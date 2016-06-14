@@ -145,8 +145,8 @@ class BoolTests: XCTestCase {
 
 class NSObjectTests: XCTestCase {
     func testShouldEqual() {
-        let six = NSNumber(integer: 6)
-        let threePlusThree = NSNumber(integer: 3+3)
+        let six = NSNumber(value: 6)
+        let threePlusThree = NSNumber(value: 3+3)
 
         six.shouldEqual(threePlusThree)
     }
@@ -159,7 +159,7 @@ class NSObjectTests: XCTestCase {
     }
 
     func testShouldBeIdenticalTo() {
-        let five = NSNumber(integer: 5)
+        let five = NSNumber(value: 5)
         let anotherFive = five
 
         five.shouldBeIdenticalTo(anotherFive)

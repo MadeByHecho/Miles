@@ -10,7 +10,7 @@ import XCTest
 import Foundation
 
 public extension Equatable {
-    public func shouldEqual<T: Equatable>(other: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldEqual<T: Equatable>(_ other: T, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to equal \(other)"
         if let other = other as? Self {
             XCTAssertEqual(self, other, message, file: file, line: line)
@@ -21,7 +21,7 @@ public extension Equatable {
 }
 
 public extension Comparable {
-    public func shouldBeGreaterThan<T: Comparable>(other: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeGreaterThan<T: Comparable>(_ other: T, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be greater than \(other)"
         if let other = other as? Self {
             XCTAssertGreaterThan(self, other, message)
@@ -30,7 +30,7 @@ public extension Comparable {
         }
     }
 
-    public func shouldBeGreaterThanOrEqualTo<T: Comparable>(other: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeGreaterThanOrEqualTo<T: Comparable>(_ other: T, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be greater than or equal to \(other)"
         if let other = other as? Self {
             XCTAssertGreaterThanOrEqual(self, other, message)
@@ -39,7 +39,7 @@ public extension Comparable {
         }
     }
 
-    public func shouldBeLessThan<T: Comparable>(other: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeLessThan<T: Comparable>(_ other: T, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be less than \(other)"
         if let other = other as? Self {
             XCTAssertLessThan(self, other, message)
@@ -48,7 +48,7 @@ public extension Comparable {
         }
     }
 
-    public func shouldBeLessThanOrEqualTo<T: Comparable>(other: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeLessThanOrEqualTo<T: Comparable>(_ other: T, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be less than or Equal to \(other)"
         if let other = other as? Self {
             XCTAssertLessThanOrEqual(self, other, message)
@@ -58,8 +58,8 @@ public extension Comparable {
     }
 }
 
-public extension FloatingPointType {
-    public func shouldBeCloseTo<T: FloatingPointType>(other: T, withAccuracy accuracy: T, file: StaticString = #file, line: UInt = #line) {
+public extension FloatingPoint {
+    public func shouldBeCloseTo<T: FloatingPoint>(_ other: T, withAccuracy accuracy: T, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be within \(accuracy) of \(other)"
         if let other = other as? Self, accuracy = accuracy as? Self {
             XCTAssertEqualWithAccuracy(self, other, accuracy: accuracy, message, file: file, line: line)
@@ -70,82 +70,82 @@ public extension FloatingPointType {
 }
 
 public extension String {
-    public func shouldContain(string: String, file: StaticString = #file, line: UInt = #line) {
+    public func shouldContain(_ string: String, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to contain \(string)"
-        XCTAssertTrue(self.rangeOfString(string) != nil, message, file: file, line: line)
+        XCTAssertTrue(self.range(of: string) != nil, message, file: file, line: line)
     }
 
-    public func shouldHavePrefix(string: String, file: StaticString = #file, line: UInt = #line) {
+    public func shouldHavePrefix(_ string: String, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to have a prefix of \(string)"
         XCTAssertTrue(self.hasPrefix(string), message, file: file, line: line)
     }
 
-    public func shouldHaveSuffix(string: String, file: StaticString = #file, line: UInt = #line) {
+    public func shouldHaveSuffix(_ string: String, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to have a suffix of \(string)"
         XCTAssertTrue(self.hasSuffix(string), message, file: file, line: line)
     }
 }
 
 public extension Bool {
-    func shouldBeTrue(file: StaticString = #file, line: UInt = #line) {
+    func shouldBeTrue(_ file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be true"
         XCTAssertTrue(self, message, file: file, line: line)
     }
 
-    func shouldBeFalse(file: StaticString = #file, line: UInt = #line) {
+    func shouldBeFalse(_ file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be false"
         XCTAssertFalse(self, message, file: file, line: line)
     }
 }
 
 public extension NSObject {
-    func shouldEqual(object: NSObject, file: StaticString = #file, line: UInt = #line) {
+    func shouldEqual(_ object: NSObject, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to equal \(object)"
         XCTAssertEqual(self, object, message, file: file, line: line)
     }
 
-    func shouldNotEqual(object: NSObject, file: StaticString = #file, line: UInt = #line) {
+    func shouldNotEqual(_ object: NSObject, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to not equal \(object)"
         XCTAssertNotEqual(self, object, message, file: file, line: line)
     }
 
-    func shouldBeIdenticalTo(object: NSObject, file: StaticString = #file, line: UInt = #line) {
+    func shouldBeIdenticalTo(_ object: NSObject, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be identical to \(object))"
         XCTAssertTrue(self === object, message, file: file, line: line)
     }
 
-    func shouldBeMemberOfClass(aClass: AnyClass, file: StaticString = #file, line: UInt = #line) {
+    func shouldBeMemberOfClass(_ aClass: AnyClass, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be member of Class \(aClass)"
-        XCTAssertTrue(self.isMemberOfClass(aClass), message, file: file, line: line)
+        XCTAssertTrue(self.isMember(of: aClass), message, file: file, line: line)
     }
 
-    func shouldBeKindOfClass(aClass: AnyClass, file: StaticString = #file, line: UInt = #line) {
+    func shouldBeKindOfClass(_ aClass: AnyClass, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be kind of Class \(aClass)"
-        XCTAssertTrue(self.isKindOfClass(aClass), message, file: file, line: line)
+        XCTAssertTrue(self.isKind(of: aClass), message, file: file, line: line)
     }
 }
 
-public extension CollectionType where Generator.Element : Equatable {
-    func shouldContain(item: Self.Generator.Element, file: StaticString = #file, line: UInt = #line) {
+public extension Collection where Iterator.Element : Equatable {
+    func shouldContain(_ item: Self.Iterator.Element, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to contain \(item)"
         var contains = false
 
-        if let _ = indexOf(item) {
+        if let _ = index(of: item) {
             contains = true
         }
         XCTAssertTrue(contains, message, file: file, line: line)
     }
 }
 
-public extension CollectionType {
-    func shouldBeEmpty(file: StaticString = #file, line: UInt = #line) {
+public extension Collection {
+    func shouldBeEmpty(_ file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be empty"
         XCTAssertTrue(isEmpty, message, file: file, line: line)
     }
 }
 
 public extension Dictionary where Value : Equatable {
-    func shouldContain(item: Value, file: StaticString = #file, line: UInt = #line) {
+    func shouldContain(_ item: Value, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to contain \(item)"
         var contains = false
 
@@ -160,22 +160,22 @@ public extension Dictionary where Value : Equatable {
 }
 
 public extension Optional {
-    public func shouldBeNil(file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeNil(_ file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be nil"
         switch self {
-        case .Some(_):
+        case .some(_):
             XCTAssertTrue(false, message, file: file, line: line)
-        case .None:
+        case .none:
             XCTAssertTrue(true, message, file: file, line: line)
         }
     }
 
-    public func shouldNotBeNil(file: StaticString = #file, line: UInt = #line) {
+    public func shouldNotBeNil(_ file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to not be nil"
         switch self {
-        case .Some(_):
+        case .some(_):
             XCTAssertTrue(true, message, file: file, line: line)
-        case .None:
+        case .none:
             XCTAssertTrue(false, message, file: file, line: line)
         }
     }
