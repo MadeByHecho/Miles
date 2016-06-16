@@ -55,7 +55,7 @@
 		D20AD96F1A91D15E0043E5C5 /* MilesTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2597A031C0114FC0059638D /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2597A0C1C0114FC0059638D /* MilesTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2AB201A1B336E8500807B22 /* MilesTests-OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AB201A1B336E8500807B22 /* MilesTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,7 @@
 				D20AD96F1A91D15E0043E5C5 /* MilesTests-iOS.xctest */,
 				D20880021A9201C100C6D7AC /* Miles.framework */,
 				D202D6771B0DB33500F957C7 /* Miles.framework */,
-				D2AB201A1B336E8500807B22 /* MilesTests-OSX.xctest */,
+				D2AB201A1B336E8500807B22 /* MilesTests-macOS.xctest */,
 				D2597A031C0114FC0059638D /* Miles.framework */,
 				D2597A0C1C0114FC0059638D /* MilesTests-tvOS.xctest */,
 			);
@@ -193,9 +193,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D202D6761B0DB33500F957C7 /* Miles-OSX */ = {
+		D202D6761B0DB33500F957C7 /* Miles-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D202D68E1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-OSX" */;
+			buildConfigurationList = D202D68E1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-macOS" */;
 			buildPhases = (
 				D202D6721B0DB33500F957C7 /* Sources */,
 				D202D6731B0DB33500F957C7 /* Frameworks */,
@@ -206,7 +206,7 @@
 			);
 			dependencies = (
 			);
-			name = "Miles-OSX";
+			name = "Miles-macOS";
 			productName = "Miles-Mac";
 			productReference = D202D6771B0DB33500F957C7 /* Miles.framework */;
 			productType = "com.apple.product-type.framework";
@@ -284,9 +284,9 @@
 			productReference = D2597A0C1C0114FC0059638D /* MilesTests-tvOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D2AB20191B336E8500807B22 /* MilesTests-OSX */ = {
+		D2AB20191B336E8500807B22 /* MilesTests-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2AB20221B336E8500807B22 /* Build configuration list for PBXNativeTarget "MilesTests-OSX" */;
+			buildConfigurationList = D2AB20221B336E8500807B22 /* Build configuration list for PBXNativeTarget "MilesTests-macOS" */;
 			buildPhases = (
 				D2AB20161B336E8500807B22 /* Sources */,
 				D2AB20171B336E8500807B22 /* Frameworks */,
@@ -297,9 +297,9 @@
 			dependencies = (
 				D2AB20211B336E8500807B22 /* PBXTargetDependency */,
 			);
-			name = "MilesTests-OSX";
+			name = "MilesTests-macOS";
 			productName = "Miles-Mac Tests";
-			productReference = D2AB201A1B336E8500807B22 /* MilesTests-OSX.xctest */;
+			productReference = D2AB201A1B336E8500807B22 /* MilesTests-macOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -309,7 +309,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Tastemade;
 				TargetAttributes = {
 					D202D6761B0DB33500F957C7 = {
@@ -350,8 +350,8 @@
 			targets = (
 				D20880011A9201C100C6D7AC /* Miles-iOS */,
 				D20AD96E1A91D15E0043E5C5 /* MilesTests-iOS */,
-				D202D6761B0DB33500F957C7 /* Miles-OSX */,
-				D2AB20191B336E8500807B22 /* MilesTests-OSX */,
+				D202D6761B0DB33500F957C7 /* Miles-macOS */,
+				D2AB20191B336E8500807B22 /* MilesTests-macOS */,
 				D2597A021C0114FC0059638D /* Miles-tvOS */,
 				D2597A0B1C0114FC0059638D /* MilesTests-tvOS */,
 			);
@@ -484,7 +484,7 @@
 		};
 		D2AB20211B336E8500807B22 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D202D6761B0DB33500F957C7 /* Miles-OSX */;
+			target = D202D6761B0DB33500F957C7 /* Miles-macOS */;
 			targetProxy = D2AB20201B336E8500807B22 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -548,6 +548,7 @@
 				PRODUCT_NAME = Miles;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -607,6 +608,7 @@
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = Miles;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -638,6 +640,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -683,6 +686,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -727,6 +731,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tastemade.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -781,6 +786,7 @@
 				PRODUCT_NAME = Miles;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -810,6 +816,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.hecho.MilesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
@@ -839,13 +846,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.Miles-Mac-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D202D68E1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-OSX" */ = {
+		D202D68E1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D202D68A1B0DB33500F957C7 /* Debug */,
@@ -899,7 +907,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2AB20221B336E8500807B22 /* Build configuration list for PBXNativeTarget "MilesTests-OSX" */ = {
+		D2AB20221B336E8500807B22 /* Build configuration list for PBXNativeTarget "MilesTests-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2AB20231B336E8500807B22 /* Debug */,

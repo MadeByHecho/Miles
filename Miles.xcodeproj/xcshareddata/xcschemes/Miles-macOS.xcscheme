@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D202D6761B0DB33500F957C7"
                BuildableName = "Miles.framework"
-               BlueprintName = "Miles-OSX"
+               BlueprintName = "Miles-macOS"
                ReferencedContainer = "container:Miles.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D2AB20191B336E8500807B22"
-               BuildableName = "MilesTests-OSX.xctest"
-               BlueprintName = "MilesTests-OSX"
+               BuildableName = "MilesTests-macOS.xctest"
+               BlueprintName = "MilesTests-macOS"
                ReferencedContainer = "container:Miles.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D2AB20191B336E8500807B22"
-               BuildableName = "MilesTests-OSX.xctest"
-               BlueprintName = "MilesTests-OSX"
+               BuildableName = "MilesTests-macOS.xctest"
+               BlueprintName = "MilesTests-macOS"
                ReferencedContainer = "container:Miles.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -58,7 +58,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D202D6761B0DB33500F957C7"
             BuildableName = "Miles.framework"
-            BlueprintName = "Miles-OSX"
+            BlueprintName = "Miles-macOS"
             ReferencedContainer = "container:Miles.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,7 +80,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D202D6761B0DB33500F957C7"
             BuildableName = "Miles.framework"
-            BlueprintName = "Miles-OSX"
+            BlueprintName = "Miles-macOS"
             ReferencedContainer = "container:Miles.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -98,7 +98,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D202D6761B0DB33500F957C7"
             BuildableName = "Miles.framework"
-            BlueprintName = "Miles-OSX"
+            BlueprintName = "Miles-macOS"
             ReferencedContainer = "container:Miles.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

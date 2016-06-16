@@ -58,11 +58,11 @@ class IntTests: XCTestCase {
     }
 
     func testThat42ShouldBeGreaterThaOrEqualTo42() {
-        42.shouldBeGreaterThanOrEqualTo(number)
+        42.shouldBeGreaterThanOrEqual(to: number)
     }
 
     func testThat41ShouldBeLessThanOrEqualTo42() {
-        41.shouldBeLessThanOrEqualTo(number)
+        41.shouldBeLessThanOrEqual(to: number)
     }
 }
 
@@ -86,18 +86,18 @@ class FloatTests: XCTestCase {
 
     func testThat42ShouldBeGreaterThaOrEqualTo42() {
         let fortyTwo: Float = 42.0
-        fortyTwo.shouldBeGreaterThanOrEqualTo(number)
+        fortyTwo.shouldBeGreaterThanOrEqual(to: number)
     }
 
     func testThat41ShouldBeLessThanOrEqualTo42() {
         let fortyOne: Float = 41.0
-        fortyOne.shouldBeLessThanOrEqualTo(number)
+        fortyOne.shouldBeLessThanOrEqual(to: number)
     }
 
     func testThat45ShouldBeCloseTo42With3Accuracy() {
         let float: Float = 45
         let accuracy: Float = 3
-        number.shouldBeCloseTo(float, withAccuracy: accuracy)
+        number.shouldBeClose(to: float, withAccuracy: accuracy)
     }
 }
 
@@ -118,16 +118,16 @@ class DoubleTests: XCTestCase {
 
     func testThat42ShouldBeGreaterThaOrEqualTo42() {
         let fortyTwo: Double = 42.0
-        fortyTwo.shouldBeGreaterThanOrEqualTo(number)
+        fortyTwo.shouldBeGreaterThanOrEqual(to: number)
     }
 
     func testThat41ShouldBeLessThanOrEqualTo42() {
         let fortyOne: Double = 41.0
-        fortyOne.shouldBeLessThanOrEqualTo(number)
+        fortyOne.shouldBeLessThanOrEqual(to: number)
     }
 
     func testThat41ShouldBeCloseTo42With3Accuracy() {
-        number.shouldBeCloseTo(41.0, withAccuracy: 1.0)
+        number.shouldBeClose(to: 41.0, withAccuracy: 1.0)
     }
 }
 
@@ -162,12 +162,12 @@ class NSObjectTests: XCTestCase {
         let five = NSNumber(value: 5)
         let anotherFive = five
 
-        five.shouldBeIdenticalTo(anotherFive)
+        five.shouldBeIdentical(to: anotherFive)
     }
 
     func testShouldBeKindOfClass() {
         let date = NSDate()
-        date.shouldBeKindOfClass(NSDate.classForCoder())
+        date.shouldBeKindOf(class: NSDate.classForCoder())
     }
 }
 

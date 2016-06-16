@@ -30,7 +30,7 @@ public extension Comparable {
         }
     }
 
-    public func shouldBeGreaterThanOrEqualTo<T: Comparable>(_ other: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeGreaterThanOrEqual<T: Comparable>(to other: T, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be greater than or equal to \(other)"
         if let other = other as? Self {
             XCTAssertGreaterThanOrEqual(self, other, message)
@@ -48,7 +48,7 @@ public extension Comparable {
         }
     }
 
-    public func shouldBeLessThanOrEqualTo<T: Comparable>(_ other: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeLessThanOrEqual<T: Comparable>(to other: T, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be less than or Equal to \(other)"
         if let other = other as? Self {
             XCTAssertLessThanOrEqual(self, other, message)
@@ -59,7 +59,7 @@ public extension Comparable {
 }
 
 public extension FloatingPoint {
-    public func shouldBeCloseTo<T: FloatingPoint>(_ other: T, withAccuracy accuracy: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeClose<T: FloatingPoint>(to other: T, withAccuracy accuracy: T, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be within \(accuracy) of \(other)"
         if let other = other as? Self, accuracy = accuracy as? Self {
             XCTAssertEqualWithAccuracy(self, other, accuracy: accuracy, message, file: file, line: line)
@@ -109,17 +109,17 @@ public extension NSObject {
         XCTAssertNotEqual(self, object, message, file: file, line: line)
     }
 
-    func shouldBeIdenticalTo(_ object: NSObject, file: StaticString = #file, line: UInt = #line) {
+    func shouldBeIdentical(to object: NSObject, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be identical to \(object))"
         XCTAssertTrue(self === object, message, file: file, line: line)
     }
 
-    func shouldBeMemberOfClass(_ aClass: AnyClass, file: StaticString = #file, line: UInt = #line) {
+    func shouldBeMemberOf(class aClass: AnyClass, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be member of Class \(aClass)"
         XCTAssertTrue(self.isMember(of: aClass), message, file: file, line: line)
     }
 
-    func shouldBeKindOfClass(_ aClass: AnyClass, file: StaticString = #file, line: UInt = #line) {
+    func shouldBeKindOf(class aClass: AnyClass, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be kind of Class \(aClass)"
         XCTAssertTrue(self.isKind(of: aClass), message, file: file, line: line)
     }
