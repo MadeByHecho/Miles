@@ -164,11 +164,6 @@ class NSObjectTests: XCTestCase {
 
         five.shouldBeIdentical(to: anotherFive)
     }
-
-    func testShouldBeKindOfClass() {
-        let date = NSDate()
-        date.shouldBeKindOf(class: NSDate.classForCoder())
-    }
 }
 
 class ArrayTests: XCTestCase {

@@ -61,7 +61,7 @@ public extension Comparable {
 public extension FloatingPoint {
     public func shouldBeClose<T: FloatingPoint>(to other: T, withAccuracy accuracy: T, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be within \(accuracy) of \(other)"
-        if let other = other as? Self, accuracy = accuracy as? Self {
+        if let other = other as? Self, let accuracy = accuracy as? Self {
             XCTAssertEqualWithAccuracy(self, other, accuracy: accuracy, message, file: file, line: line)
         } else {
             XCTAssertTrue(false, message)
