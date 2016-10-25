@@ -114,6 +114,7 @@ public extension NSObject {
         XCTAssertTrue(self === object, message, file: file, line: line)
     }
 
+    #if !os(Linux)
     func shouldBeMemberOf(class aClass: AnyClass, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be member of Class \(aClass)"
         XCTAssertTrue(self.isMember(of: aClass), message, file: file, line: line)
@@ -123,6 +124,7 @@ public extension NSObject {
         let message = "Expected \(self) to be kind of Class \(aClass)"
         XCTAssertTrue(self.isKind(of: aClass), message, file: file, line: line)
     }
+    #endif
 }
 
 public extension Collection where Iterator.Element : Equatable {
