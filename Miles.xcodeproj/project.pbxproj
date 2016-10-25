@@ -50,9 +50,9 @@
 		D20880121A9201C100C6D7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20880131A9201C100C6D7AC /* MilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilesTests.swift; sourceTree = "<group>"; };
 		D20AD96F1A91D15E0043E5C5 /* MilesTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D20E0D661DBF54F10052FB5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20E0D6D1DBF56150052FB5E /* Miles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Miles.h; sourceTree = "<group>"; };
 		D20E0D6E1DBF56150052FB5E /* Miles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Miles.swift; sourceTree = "<group>"; };
+		D20E0D761DBF57260052FB5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2597A031C0114FC0059638D /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2597A0C1C0114FC0059638D /* MilesTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AB201A1B336E8500807B22 /* MilesTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,17 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				D20E0D6C1DBF56080052FB5E /* Miles */,
-				D20E0D651DBF54E00052FB5E /* Supporting Files */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		D20E0D651DBF54E00052FB5E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D20E0D661DBF54F10052FB5E /* Info.plist */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D20E0D6C1DBF56080052FB5E /* Miles */ = {
@@ -167,8 +158,17 @@
 			children = (
 				D20E0D6D1DBF56150052FB5E /* Miles.h */,
 				D20E0D6E1DBF56150052FB5E /* Miles.swift */,
+				D20E0D751DBF57150052FB5E /* Supporting Files */,
 			);
 			path = Miles;
+			sourceTree = "<group>";
+		};
+		D20E0D751DBF57150052FB5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D20E0D761DBF57260052FB5E /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -522,7 +522,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Miles/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -553,7 +553,7 @@
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Miles/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -586,7 +586,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Miles/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -617,7 +617,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Miles/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -772,7 +772,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Miles/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.hecho.Miles;
@@ -801,7 +801,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Miles/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.hecho.Miles;
