@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D202D6901B0DB35700F957C7 /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208801B1A92020B00C6D7AC /* Miles.swift */; };
-		D20880071A9201C100C6D7AC /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20880061A9201C100C6D7AC /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D22EA34F1C63749100611422 /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20880061A9201C100C6D7AC /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D20E0D631DBF54D10052FB5E /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20E0D611DBF54D10052FB5E /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D20E0D641DBF54D10052FB5E /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E0D621DBF54D10052FB5E /* Miles.swift */; };
+		D20E0D681DBF552F0052FB5E /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E0D621DBF54D10052FB5E /* Miles.swift */; };
+		D20E0D691DBF55300052FB5E /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E0D621DBF54D10052FB5E /* Miles.swift */; };
+		D20E0D6A1DBF55340052FB5E /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20E0D611DBF54D10052FB5E /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D20E0D6B1DBF55350052FB5E /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20E0D611DBF54D10052FB5E /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D22EA3501C63749E00611422 /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20880131A9201C100C6D7AC /* MilesTests.swift */; };
-		D24F59791A920FC10055C9F1 /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208801B1A92020B00C6D7AC /* Miles.swift */; };
 		D2597A0D1C0114FC0059638D /* Miles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2597A031C0114FC0059638D /* Miles.framework */; };
-		D2597A1B1C0116010059638D /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208801B1A92020B00C6D7AC /* Miles.swift */; };
 		D2AB201F1B336E8500807B22 /* Miles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D202D6771B0DB33500F957C7 /* Miles.framework */; };
 		D2D339CD1C1CA9B1009300DB /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20880131A9201C100C6D7AC /* MilesTests.swift */; };
 		D2D339CE1C1CA9B2009300DB /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20880131A9201C100C6D7AC /* MilesTests.swift */; };
-		D2F3A00B1B0E11B900986587 /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20880061A9201C100C6D7AC /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,12 +47,12 @@
 /* Begin PBXFileReference section */
 		D202D6771B0DB33500F957C7 /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20880021A9201C100C6D7AC /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D20880051A9201C100C6D7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D20880061A9201C100C6D7AC /* Miles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Miles.h; sourceTree = "<group>"; };
 		D20880121A9201C100C6D7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20880131A9201C100C6D7AC /* MilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilesTests.swift; sourceTree = "<group>"; };
-		D208801B1A92020B00C6D7AC /* Miles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Miles.swift; sourceTree = "<group>"; };
 		D20AD96F1A91D15E0043E5C5 /* MilesTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20E0D611DBF54D10052FB5E /* Miles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Miles.h; sourceTree = "<group>"; };
+		D20E0D621DBF54D10052FB5E /* Miles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Miles.swift; sourceTree = "<group>"; };
+		D20E0D661DBF54F10052FB5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2597A031C0114FC0059638D /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2597A0C1C0114FC0059638D /* MilesTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AB201A1B336E8500807B22 /* MilesTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,24 +106,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D20880031A9201C100C6D7AC /* Miles */ = {
-			isa = PBXGroup;
-			children = (
-				D20880061A9201C100C6D7AC /* Miles.h */,
-				D208801B1A92020B00C6D7AC /* Miles.swift */,
-				D20880041A9201C100C6D7AC /* Supporting Files */,
-			);
-			path = Miles;
-			sourceTree = "<group>";
-		};
-		D20880041A9201C100C6D7AC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D20880051A9201C100C6D7AC /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		D20880101A9201C100C6D7AC /* MilesTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +126,7 @@
 		D20AD9511A91D15D0043E5C5 = {
 			isa = PBXGroup;
 			children = (
-				D20880031A9201C100C6D7AC /* Miles */,
+				D20E0D601DBF54BB0052FB5E /* Sources */,
 				D20880101A9201C100C6D7AC /* MilesTests */,
 				D20AD95B1A91D15D0043E5C5 /* Products */,
 			);
@@ -163,6 +145,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D20E0D601DBF54BB0052FB5E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D20E0D611DBF54D10052FB5E /* Miles.h */,
+				D20E0D621DBF54D10052FB5E /* Miles.swift */,
+				D20E0D651DBF54E00052FB5E /* Supporting Files */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D20E0D651DBF54E00052FB5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D20E0D661DBF54F10052FB5E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -170,7 +170,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F3A00B1B0E11B900986587 /* Miles.h in Headers */,
+				D20E0D6A1DBF55340052FB5E /* Miles.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +178,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20880071A9201C100C6D7AC /* Miles.h in Headers */,
+				D20E0D631DBF54D10052FB5E /* Miles.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +186,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D22EA34F1C63749100611422 /* Miles.h in Headers */,
+				D20E0D6B1DBF55350052FB5E /* Miles.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D202D6901B0DB35700F957C7 /* Miles.swift in Sources */,
+				D20E0D681DBF552F0052FB5E /* Miles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D24F59791A920FC10055C9F1 /* Miles.swift in Sources */,
+				D20E0D641DBF54D10052FB5E /* Miles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2597A1B1C0116010059638D /* Miles.swift in Sources */,
+				D20E0D691DBF55300052FB5E /* Miles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +514,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Miles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -545,7 +545,7 @@
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = Miles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -563,6 +563,7 @@
 		D20880161A9201C100C6D7AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -577,7 +578,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Miles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -585,6 +586,7 @@
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = Miles;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -594,6 +596,7 @@
 		D20880171A9201C100C6D7AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -606,7 +609,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				INFOPLIST_FILE = Miles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -712,6 +715,7 @@
 		D20AD97D1A91D15E0043E5C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -732,6 +736,7 @@
 		D20AD97E1A91D15E0043E5C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "MilesTests/Supporting Files/Info.plist";
@@ -759,7 +764,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = Miles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.hecho.Miles;
@@ -788,7 +793,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = Miles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.hecho.Miles;
@@ -807,6 +812,7 @@
 		D2597A161C0114FC0059638D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = MilesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -821,6 +827,7 @@
 		D2597A171C0114FC0059638D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = MilesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -836,6 +843,7 @@
 		D2AB20231B336E8500807B22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "MilesTests/Supporting Files/Info.plist";
@@ -851,6 +859,7 @@
 		D2AB20241B336E8500807B22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "MilesTests/Supporting Files/Info.plist";
