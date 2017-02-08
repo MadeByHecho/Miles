@@ -163,7 +163,7 @@ public extension Dictionary where Value : Equatable {
 
 public extension Optional {
     public func shouldBeNil(_ file: StaticString = #file, line: UInt = #line) {
-        let message = "Expected \(self) to be nil"
+        let message = "Expected \(String(describing: self)) to be nil"
         switch self {
         case .some(_):
             XCTAssertTrue(false, message, file: file, line: line)
@@ -173,7 +173,7 @@ public extension Optional {
     }
 
     public func shouldNotBeNil(_ file: StaticString = #file, line: UInt = #line) {
-        let message = "Expected \(self) to not be nil"
+        let message = "Expected \(String(describing: self)) to not be nil"
         switch self {
         case .some(_):
             XCTAssertTrue(true, message, file: file, line: line)
