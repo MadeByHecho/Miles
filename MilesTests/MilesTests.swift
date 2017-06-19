@@ -200,4 +200,9 @@ class OptionalTests: XCTestCase {
         let optionalString: String? = "I'm a real string"
         optionalString.shouldNotBeNil()
     }
+    
+    func testEquatableWithNonNilValue() {
+        let optionalString: String? = "I'm a real string"
+        optionalString.shouldEqual("I'm a real string")
+    }
 }

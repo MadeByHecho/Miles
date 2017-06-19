@@ -161,7 +161,7 @@ public extension Dictionary where Value : Equatable {
     }
 }
 
-public extension Optional {
+public extension Optional {        
     public func shouldBeNil(_ file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(String(describing: self)) to be nil"
         switch self {
@@ -179,6 +179,17 @@ public extension Optional {
             XCTAssertTrue(true, message, file: file, line: line)
         case .none:
             XCTAssertTrue(false, message, file: file, line: line)
+        }
+    }
+}
+
+public extension Optional where Wrapped: Equatable {
+    public func shouldEqual<T: Equatable>(_ other: T, file: StaticString = #file, line: UInt = #line) {
+        switch self {
+        case .some(let value):
+            value.shouldEqual(other, file: file, line: line)
+        case .none:
+            XCTFail()
         }
     }
 }
