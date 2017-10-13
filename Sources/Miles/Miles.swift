@@ -18,6 +18,14 @@ public extension Equatable {
             XCTAssertTrue(false, message, file: file, line: line)
         }
     }
+
+    public func shouldEqual<T: Equatable>(_ other: T?, file: StaticString = #file, line: UInt = #line) {
+        guard let other = other else {
+            XCTFail("Expected other to be Non nil")
+            return
+        }
+        shouldEqual(other, file: file, line: line)
+    }
 }
 
 public extension Comparable {
@@ -62,7 +70,7 @@ public extension FloatingPoint {
     public func shouldBeClose<T: FloatingPoint>(to other: T, withAccuracy accuracy: T, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be within \(accuracy) of \(other)"
         if let other = other as? Self, let accuracy = accuracy as? Self {
-            XCTAssertEqualWithAccuracy(self, other, accuracy: accuracy, message, file: file, line: line)
+            XCTAssertEqual(self, other, accuracy: accuracy, message, file: file, line: line)
         } else {
             XCTAssertTrue(false, message)
         }
@@ -132,7 +140,7 @@ public extension Collection where Iterator.Element : Equatable {
         let message = "Expected \(self) to contain \(item)"
         var contains = false
 
-        if let _ = index(of: item) {
+        if index(of: item) != nil {
             contains = true
         }
         XCTAssertTrue(contains, message, file: file, line: line)
@@ -151,11 +159,9 @@ public extension Dictionary where Value : Equatable {
         let message = "Expected \(self) to contain \(item)"
         var contains = false
 
-        for value in values {
-            if value == item {
-                contains = true
-                break
-            }
+        for value in values where value == item {
+            contains = true
+            break
         }
         XCTAssertTrue(contains, message, file: file, line: line)
     }
@@ -165,7 +171,7 @@ public extension Optional {
     public func shouldBeNil(_ file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(String(describing: self)) to be nil"
         switch self {
-        case .some(_):
+        case .some:
             XCTAssertTrue(false, message, file: file, line: line)
         case .none:
             XCTAssertTrue(true, message, file: file, line: line)
@@ -175,10 +181,35 @@ public extension Optional {
     public func shouldNotBeNil(_ file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(String(describing: self)) to not be nil"
         switch self {
-        case .some(_):
+        case .some:
             XCTAssertTrue(true, message, file: file, line: line)
         case .none:
             XCTAssertTrue(false, message, file: file, line: line)
+        }
+    }
+}
+
+public extension Optional where Wrapped: Equatable {
+    public func shouldEqual(_ other: Wrapped, file: StaticString = #file, line: UInt = #line) {
+        switch self {
+        case (.some(let left)):
+            let message = "Expected \(left) to equal \(other)"
+            XCTAssertEqual(self, other, message, file: file, line: line)
+        default:
+            XCTFail("Exepcted \(String(describing: self)) to equal \(String(describing: other))")
+        }
+    }
+
+    public func shouldEqual(_ other: Wrapped?, file: StaticString = #file, line: UInt = #line) {
+        switch (self, other) {
+        case (.some(let left), .some(let right)):
+            let message = "Expected \(left) to equal \(right)"
+            XCTAssertEqual(self, right, message, file: file, line: line)
+        case (.none, .none):
+            let message = "Expected nil to equal nil"
+            XCTAssertTrue(true, message)
+        default:
+            XCTFail("Exepcted \(String(describing: self)) to equal \(String(describing: other))")
         }
     }
 }
