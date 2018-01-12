@@ -39,7 +39,7 @@ It feels like every 6 months or so I hop on the Quick/Kiwi bandwagon (because of
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source_files  = "Miles"
+  s.source_files  = "Sources/Miles/Miles.swift"
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.framework  = "XCTest"
