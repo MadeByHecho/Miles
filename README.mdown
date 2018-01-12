@@ -1,5 +1,5 @@
 # Miles
-**A thin wrapper around XCTest Marcos to make tests just a bit more readable.**
+**A thin wrapper around XCTest Macros to make tests just a bit more readable.**
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
