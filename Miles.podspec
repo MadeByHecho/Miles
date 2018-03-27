@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "Miles"
-  s.version      = "2.0.3"
+  s.version      = "2.1.0"
   s.summary      = "A thin wrapper around XCTest Marcos to make tests just a bit more readable."
   s.description  = <<-DESC
   Miles is a simple solution to an XCTest readability problem.
@@ -35,7 +35,7 @@ It feels like every 6 months or so I hop on the Quick/Kiwi bandwagon (because of
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "https://github.com/MadeByHecho/Miles.git", :tag => "v2.0.3" }
+  s.source       = { :git => "https://github.com/MadeByHecho/Miles.git", :tag => "v2.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
