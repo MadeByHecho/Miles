@@ -38,7 +38,7 @@ class CharacterTests: XCTestCase {
     let character: Character = "A"
 
     func testThatAEqualsA() {
-        character.shouldEqual("A" as Character)
+        character.shouldEqual("A")
     }
 }
 

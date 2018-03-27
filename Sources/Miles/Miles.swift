@@ -10,16 +10,12 @@ import XCTest
 import Foundation
 
 public extension Equatable {
-    public func shouldEqual<T: Equatable>(_ other: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldEqual(_ other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to equal \(other)"
-        if let other = other as? Self {
-            XCTAssertEqual(self, other, message, file: file, line: line)
-        } else {
-            XCTAssertTrue(false, message, file: file, line: line)
-        }
+        XCTAssertEqual(self, other, message, file: file, line: line)
     }
 
-    public func shouldEqual<T: Equatable>(_ other: T?, file: StaticString = #file, line: UInt = #line) {
+    public func shouldEqual(_ other: Self?, file: StaticString = #file, line: UInt = #line) {
         guard let other = other else {
             XCTFail("Expected other to be Non nil")
             return
@@ -29,51 +25,31 @@ public extension Equatable {
 }
 
 public extension Comparable {
-    public func shouldBeGreaterThan<T: Comparable>(_ other: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeGreaterThan(_ other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be greater than \(other)"
-        if let other = other as? Self {
-            XCTAssertGreaterThan(self, other, message)
-        } else {
-            XCTAssertTrue(false, message)
-        }
+        XCTAssertGreaterThan(self, other, message)
     }
 
-    public func shouldBeGreaterThanOrEqual<T: Comparable>(to other: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeGreaterThanOrEqual(to other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be greater than or equal to \(other)"
-        if let other = other as? Self {
-            XCTAssertGreaterThanOrEqual(self, other, message)
-        } else {
-            XCTAssertTrue(false, message)
-        }
+        XCTAssertGreaterThanOrEqual(self, other, message)
     }
 
-    public func shouldBeLessThan<T: Comparable>(_ other: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeLessThan(_ other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be less than \(other)"
-        if let other = other as? Self {
-            XCTAssertLessThan(self, other, message)
-        } else {
-            XCTAssertTrue(false, message)
-        }
+        XCTAssertLessThan(self, other, message)
     }
 
-    public func shouldBeLessThanOrEqual<T: Comparable>(to other: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeLessThanOrEqual(to other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be less than or Equal to \(other)"
-        if let other = other as? Self {
-            XCTAssertLessThanOrEqual(self, other, message)
-        } else {
-            XCTAssertTrue(false, message)
-        }
+        XCTAssertLessThanOrEqual(self, other, message)
     }
 }
 
 public extension FloatingPoint {
-    public func shouldBeClose<T: FloatingPoint>(to other: T, withAccuracy accuracy: T, file: StaticString = #file, line: UInt = #line) {
+    public func shouldBeClose(to other: Self, withAccuracy accuracy: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be within \(accuracy) of \(other)"
-        if let other = other as? Self, let accuracy = accuracy as? Self {
-            XCTAssertEqual(self, other, accuracy: accuracy, message, file: file, line: line)
-        } else {
-            XCTAssertTrue(false, message)
-        }
+        XCTAssertEqual(self, other, accuracy: accuracy, message, file: file, line: line)
     }
 }
 
@@ -135,14 +111,10 @@ public extension NSObject {
     #endif
 }
 
-public extension Collection where Iterator.Element : Equatable {
+public extension Sequence where Iterator.Element : Equatable {
     func shouldContain(_ item: Self.Iterator.Element, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to contain \(item)"
-        var contains = false
-
-        if index(of: item) != nil {
-            contains = true
-        }
+        let contains = self.contains(item)
         XCTAssertTrue(contains, message, file: file, line: line)
     }
 }
@@ -157,11 +129,8 @@ public extension Collection {
 public extension Dictionary where Value : Equatable {
     func shouldContain(_ item: Value, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to contain \(item)"
-        var contains = false
-
-        for value in values where value == item {
-            contains = true
-            break
+        let contains = self.contains { (_, value) -> Bool in
+            value == item
         }
         XCTAssertTrue(contains, message, file: file, line: line)
     }
