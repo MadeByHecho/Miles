@@ -111,7 +111,7 @@ public extension NSObject {
     #endif
 }
 
-public extension Sequence where Iterator.Element : Equatable {
+public extension Sequence where Iterator.Element: Equatable {
     func shouldContain(_ item: Self.Iterator.Element, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to contain \(item)"
         let contains = self.contains(item)
@@ -126,7 +126,7 @@ public extension Collection {
     }
 }
 
-public extension Dictionary where Value : Equatable {
+public extension Dictionary where Value: Equatable {
     func shouldContain(_ item: Value, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to contain \(item)"
         let contains = self.contains { (_, value) -> Bool in

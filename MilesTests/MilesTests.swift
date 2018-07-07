@@ -180,12 +180,12 @@ class ArrayTests: XCTestCase {
 
 class DictionaryTests: XCTestCase {
     func testShouldBeEmpty() {
-        let emptyDictionary = [Int : String]()
+        let emptyDictionary = [Int: String]()
         emptyDictionary.shouldBeEmpty()
     }
 
     func testShouldContain() {
-        let dictionary = [1 : "one", 2 : "two"]
+        let dictionary = [1: "one", 2: "two"]
         dictionary.shouldContain("one")
     }
 }
