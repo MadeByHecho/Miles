@@ -795,7 +795,7 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -814,7 +814,7 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "$(inherited)";
 			};
 			name = Release;
 		};
