@@ -1,1054 +1,586 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		D20E0D6F1DBF56150052FB5E /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20E0D6D1DBF56150052FB5E /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D20E0D701DBF56150052FB5E /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E0D6E1DBF56150052FB5E /* Miles.swift */; };
-		D20E0D711DBF56170052FB5E /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20E0D6D1DBF56150052FB5E /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D20E0D721DBF56180052FB5E /* Miles.h in Headers */ = {isa = PBXBuildFile; fileRef = D20E0D6D1DBF56150052FB5E /* Miles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D20E0D731DBF56210052FB5E /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E0D6E1DBF56150052FB5E /* Miles.swift */; };
-		D20E0D741DBF56210052FB5E /* Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E0D6E1DBF56150052FB5E /* Miles.swift */; };
-		D22EA3501C63749E00611422 /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20880131A9201C100C6D7AC /* MilesTests.swift */; };
-		D2597A0D1C0114FC0059638D /* Miles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2597A031C0114FC0059638D /* Miles.framework */; };
-		D2AB201F1B336E8500807B22 /* Miles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D202D6771B0DB33500F957C7 /* Miles.framework */; };
-		D2D339CD1C1CA9B1009300DB /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20880131A9201C100C6D7AC /* MilesTests.swift */; };
-		D2D339CE1C1CA9B2009300DB /* MilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20880131A9201C100C6D7AC /* MilesTests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D20880221A920EC600C6D7AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D20AD9521A91D15D0043E5C5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D20880011A9201C100C6D7AC;
-			remoteInfo = Miles;
-		};
-		D2597A0E1C0114FC0059638D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D20AD9521A91D15D0043E5C5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2597A021C0114FC0059638D;
-			remoteInfo = Miles;
-		};
-		D2AB20201B336E8500807B22 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D20AD9521A91D15D0043E5C5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D202D6761B0DB33500F957C7;
-			remoteInfo = "Miles-Mac";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		D202D6771B0DB33500F957C7 /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D20880021A9201C100C6D7AC /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D20880121A9201C100C6D7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D20880131A9201C100C6D7AC /* MilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilesTests.swift; sourceTree = "<group>"; };
-		D20AD96F1A91D15E0043E5C5 /* MilesTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D20E0D6D1DBF56150052FB5E /* Miles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Miles.h; sourceTree = "<group>"; };
-		D20E0D6E1DBF56150052FB5E /* Miles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Miles.swift; sourceTree = "<group>"; };
-		D20E0D761DBF57260052FB5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2597A031C0114FC0059638D /* Miles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2597A0C1C0114FC0059638D /* MilesTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2AB201A1B336E8500807B22 /* MilesTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MilesTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		D202D6731B0DB33500F957C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2087FFE1A9201C100C6D7AC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D20AD96C1A91D15E0043E5C5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D25979FF1C0114FC0059638D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2597A091C0114FC0059638D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2597A0D1C0114FC0059638D /* Miles.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2AB20171B336E8500807B22 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2AB201F1B336E8500807B22 /* Miles.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		D20880101A9201C100C6D7AC /* MilesTests */ = {
-			isa = PBXGroup;
-			children = (
-				D20880131A9201C100C6D7AC /* MilesTests.swift */,
-				D20880111A9201C100C6D7AC /* Supporting Files */,
-			);
-			path = MilesTests;
-			sourceTree = "<group>";
-		};
-		D20880111A9201C100C6D7AC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D20880121A9201C100C6D7AC /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D20AD9511A91D15D0043E5C5 = {
-			isa = PBXGroup;
-			children = (
-				D20E0D601DBF54BB0052FB5E /* Sources */,
-				D20880101A9201C100C6D7AC /* MilesTests */,
-				D20AD95B1A91D15D0043E5C5 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		D20AD95B1A91D15D0043E5C5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D20AD96F1A91D15E0043E5C5 /* MilesTests-iOS.xctest */,
-				D20880021A9201C100C6D7AC /* Miles.framework */,
-				D202D6771B0DB33500F957C7 /* Miles.framework */,
-				D2AB201A1B336E8500807B22 /* MilesTests-macOS.xctest */,
-				D2597A031C0114FC0059638D /* Miles.framework */,
-				D2597A0C1C0114FC0059638D /* MilesTests-tvOS.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D20E0D601DBF54BB0052FB5E /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				D20E0D6C1DBF56080052FB5E /* Miles */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		D20E0D6C1DBF56080052FB5E /* Miles */ = {
-			isa = PBXGroup;
-			children = (
-				D20E0D6D1DBF56150052FB5E /* Miles.h */,
-				D20E0D6E1DBF56150052FB5E /* Miles.swift */,
-				D20E0D751DBF57150052FB5E /* Supporting Files */,
-			);
-			path = Miles;
-			sourceTree = "<group>";
-		};
-		D20E0D751DBF57150052FB5E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D20E0D761DBF57260052FB5E /* Info.plist */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		D202D6741B0DB33500F957C7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D20E0D711DBF56170052FB5E /* Miles.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2087FFF1A9201C100C6D7AC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D20E0D6F1DBF56150052FB5E /* Miles.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2597A001C0114FC0059638D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D20E0D721DBF56180052FB5E /* Miles.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		D202D6761B0DB33500F957C7 /* Miles-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D202D68E1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-macOS" */;
-			buildPhases = (
-				D202D6721B0DB33500F957C7 /* Sources */,
-				D202D6731B0DB33500F957C7 /* Frameworks */,
-				D202D6741B0DB33500F957C7 /* Headers */,
-				D202D6751B0DB33500F957C7 /* Resources */,
-				D25E4C3220F0D9A800E3C4B2 /* Swift Lint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Miles-macOS";
-			productName = "Miles-Mac";
-			productReference = D202D6771B0DB33500F957C7 /* Miles.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D20880011A9201C100C6D7AC /* Miles-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D20880151A9201C100C6D7AC /* Build configuration list for PBXNativeTarget "Miles-iOS" */;
-			buildPhases = (
-				D2087FFD1A9201C100C6D7AC /* Sources */,
-				D2087FFE1A9201C100C6D7AC /* Frameworks */,
-				D2087FFF1A9201C100C6D7AC /* Headers */,
-				D20880001A9201C100C6D7AC /* Resources */,
-				D24D01ED1C60DA2000A619E0 /* Swift Lint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Miles-iOS";
-			productName = Miles;
-			productReference = D20880021A9201C100C6D7AC /* Miles.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D20AD96E1A91D15E0043E5C5 /* MilesTests-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D20AD97C1A91D15E0043E5C5 /* Build configuration list for PBXNativeTarget "MilesTests-iOS" */;
-			buildPhases = (
-				D20AD96B1A91D15E0043E5C5 /* Sources */,
-				D20AD96C1A91D15E0043E5C5 /* Frameworks */,
-				D20AD96D1A91D15E0043E5C5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D20880231A920EC600C6D7AC /* PBXTargetDependency */,
-			);
-			name = "MilesTests-iOS";
-			productName = MilesTests;
-			productReference = D20AD96F1A91D15E0043E5C5 /* MilesTests-iOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D2597A021C0114FC0059638D /* Miles-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2597A181C0114FC0059638D /* Build configuration list for PBXNativeTarget "Miles-tvOS" */;
-			buildPhases = (
-				D25979FE1C0114FC0059638D /* Sources */,
-				D25979FF1C0114FC0059638D /* Frameworks */,
-				D2597A001C0114FC0059638D /* Headers */,
-				D2597A011C0114FC0059638D /* Resources */,
-				D25E4C3320F0DA9100E3C4B2 /* Swift Lint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Miles-tvOS";
-			productName = Miles;
-			productReference = D2597A031C0114FC0059638D /* Miles.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D2597A0B1C0114FC0059638D /* MilesTests-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2597A191C0114FC0059638D /* Build configuration list for PBXNativeTarget "MilesTests-tvOS" */;
-			buildPhases = (
-				D2597A081C0114FC0059638D /* Sources */,
-				D2597A091C0114FC0059638D /* Frameworks */,
-				D2597A0A1C0114FC0059638D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D2597A0F1C0114FC0059638D /* PBXTargetDependency */,
-			);
-			name = "MilesTests-tvOS";
-			productName = MilesTests;
-			productReference = D2597A0C1C0114FC0059638D /* MilesTests-tvOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D2AB20191B336E8500807B22 /* MilesTests-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2AB20221B336E8500807B22 /* Build configuration list for PBXNativeTarget "MilesTests-macOS" */;
-			buildPhases = (
-				D2AB20161B336E8500807B22 /* Sources */,
-				D2AB20171B336E8500807B22 /* Frameworks */,
-				D2AB20181B336E8500807B22 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D2AB20211B336E8500807B22 /* PBXTargetDependency */,
-			);
-			name = "MilesTests-macOS";
-			productName = "Miles-Mac Tests";
-			productReference = D2AB201A1B336E8500807B22 /* MilesTests-macOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D20AD9521A91D15D0043E5C5 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = Tastemade;
-				TargetAttributes = {
-					D202D6761B0DB33500F957C7 = {
-						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = FX8EL9YD72;
-						LastSwiftMigration = 0800;
-					};
-					D20880011A9201C100C6D7AC = {
-						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = FX8EL9YD72;
-						LastSwiftMigration = 0930;
-					};
-					D20AD96E1A91D15E0043E5C5 = {
-						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = FX8EL9YD72;
-						LastSwiftMigration = 0930;
-						TestTargetID = D20AD9591A91D15D0043E5C5;
-					};
-					D2597A021C0114FC0059638D = {
-						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = FX8EL9YD72;
-						LastSwiftMigration = 0800;
-					};
-					D2597A0B1C0114FC0059638D = {
-						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = FX8EL9YD72;
-						LastSwiftMigration = 0800;
-					};
-					D2AB20191B336E8500807B22 = {
-						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = FX8EL9YD72;
-						LastSwiftMigration = 0800;
-					};
-				};
-			};
-			buildConfigurationList = D20AD9551A91D15D0043E5C5 /* Build configuration list for PBXProject "Miles" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = D20AD9511A91D15D0043E5C5;
-			productRefGroup = D20AD95B1A91D15D0043E5C5 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				D20880011A9201C100C6D7AC /* Miles-iOS */,
-				D20AD96E1A91D15E0043E5C5 /* MilesTests-iOS */,
-				D202D6761B0DB33500F957C7 /* Miles-macOS */,
-				D2AB20191B336E8500807B22 /* MilesTests-macOS */,
-				D2597A021C0114FC0059638D /* Miles-tvOS */,
-				D2597A0B1C0114FC0059638D /* MilesTests-tvOS */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		D202D6751B0DB33500F957C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D20880001A9201C100C6D7AC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D20AD96D1A91D15E0043E5C5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2597A011C0114FC0059638D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2597A0A1C0114FC0059638D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2AB20181B336E8500807B22 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D24D01ED1C60DA2000A619E0 /* Swift Lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Swift Lint";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		D25E4C3220F0D9A800E3C4B2 /* Swift Lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Swift Lint";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		D25E4C3320F0DA9100E3C4B2 /* Swift Lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Swift Lint";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		D202D6721B0DB33500F957C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D20E0D731DBF56210052FB5E /* Miles.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2087FFD1A9201C100C6D7AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D20E0D701DBF56150052FB5E /* Miles.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D20AD96B1A91D15E0043E5C5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2D339CD1C1CA9B1009300DB /* MilesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D25979FE1C0114FC0059638D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D20E0D741DBF56210052FB5E /* Miles.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2597A081C0114FC0059638D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D22EA3501C63749E00611422 /* MilesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2AB20161B336E8500807B22 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2D339CE1C1CA9B2009300DB /* MilesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D20880231A920EC600C6D7AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D20880011A9201C100C6D7AC /* Miles-iOS */;
-			targetProxy = D20880221A920EC600C6D7AC /* PBXContainerItemProxy */;
-		};
-		D2597A0F1C0114FC0059638D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2597A021C0114FC0059638D /* Miles-tvOS */;
-			targetProxy = D2597A0E1C0114FC0059638D /* PBXContainerItemProxy */;
-		};
-		D2AB20211B336E8500807B22 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D202D6761B0DB33500F957C7 /* Miles-macOS */;
-			targetProxy = D2AB20201B336E8500807B22 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		D202D68A1B0DB33500F957C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FX8EL9YD72;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Miles/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Miles;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = "x86_64 i386";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D202D68B1B0DB33500F957C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FX8EL9YD72;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Miles/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Miles;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = "x86_64 i386";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D20880161A9201C100C6D7AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FX8EL9YD72;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Miles/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
-				PRODUCT_NAME = Miles;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = "arm64 armv7 armv7s";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D20880171A9201C100C6D7AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FX8EL9YD72;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Miles/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
-				PRODUCT_NAME = Miles;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = "arm64 armv7 armv7s";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D20AD9771A91D15E0043E5C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s";
-			};
-			name = Debug;
-		};
-		D20AD9781A91D15E0043E5C5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s";
-			};
-			name = Release;
-		};
-		D20AD97D1A91D15E0043E5C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = FX8EL9YD72;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "MilesTests/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tastemade.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "";
-				VALID_ARCHS = "$(inherited)";
-			};
-			name = Debug;
-		};
-		D20AD97E1A91D15E0043E5C5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = FX8EL9YD72;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "MilesTests/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tastemade.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "";
-				VALID_ARCHS = "$(inherited)";
-			};
-			name = Release;
-		};
-		D2597A141C0114FC0059638D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FX8EL9YD72;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Miles/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.hecho.Miles;
-				PRODUCT_NAME = Miles;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALID_ARCHS = arm64;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D2597A151C0114FC0059638D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FX8EL9YD72;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Miles/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.hecho.Miles;
-				PRODUCT_NAME = Miles;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALID_ARCHS = arm64;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D2597A161C0114FC0059638D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = FX8EL9YD72;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = MilesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.hecho.MilesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_VERSION = 4.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALID_ARCHS = arm64;
-			};
-			name = Debug;
-		};
-		D2597A171C0114FC0059638D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = FX8EL9YD72;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = MilesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.hecho.MilesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALID_ARCHS = arm64;
-			};
-			name = Release;
-		};
-		D2AB20231B336E8500807B22 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = FX8EL9YD72;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "MilesTests/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.Miles-Mac-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = "i386 x86_64";
-			};
-			name = Debug;
-		};
-		D2AB20241B336E8500807B22 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = FX8EL9YD72;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "MilesTests/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.hecho.Miles-Mac-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = "i386 x86_64";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		D202D68E1B0DB33500F957C7 /* Build configuration list for PBXNativeTarget "Miles-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D202D68A1B0DB33500F957C7 /* Debug */,
-				D202D68B1B0DB33500F957C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D20880151A9201C100C6D7AC /* Build configuration list for PBXNativeTarget "Miles-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D20880161A9201C100C6D7AC /* Debug */,
-				D20880171A9201C100C6D7AC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D20AD9551A91D15D0043E5C5 /* Build configuration list for PBXProject "Miles" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D20AD9771A91D15E0043E5C5 /* Debug */,
-				D20AD9781A91D15E0043E5C5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D20AD97C1A91D15E0043E5C5 /* Build configuration list for PBXNativeTarget "MilesTests-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D20AD97D1A91D15E0043E5C5 /* Debug */,
-				D20AD97E1A91D15E0043E5C5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D2597A181C0114FC0059638D /* Build configuration list for PBXNativeTarget "Miles-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2597A141C0114FC0059638D /* Debug */,
-				D2597A151C0114FC0059638D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D2597A191C0114FC0059638D /* Build configuration list for PBXNativeTarget "MilesTests-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2597A161C0114FC0059638D /* Debug */,
-				D2597A171C0114FC0059638D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D2AB20221B336E8500807B22 /* Build configuration list for PBXNativeTarget "MilesTests-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2AB20231B336E8500807B22 /* Debug */,
-				D2AB20241B336E8500807B22 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D20AD9521A91D15D0043E5C5 /* Project object */;
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "Miles::Miles" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_22";
+         buildPhases = (
+            "OBJ_25",
+            "OBJ_27"
+         );
+         dependencies = (
+         );
+         name = "Miles";
+         productName = "Miles";
+         productReference = "Miles::Miles::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Miles::Miles::Product" = {
+         isa = "PBXFileReference";
+         path = "Miles.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Miles::MilesPackageTests::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_35";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_38"
+         );
+         name = "MilesPackageTests";
+         productName = "MilesPackageTests";
+      };
+      "Miles::MilesTests" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_40";
+         buildPhases = (
+            "OBJ_43",
+            "OBJ_45"
+         );
+         dependencies = (
+            "OBJ_47"
+         );
+         name = "MilesTests";
+         productName = "MilesTests";
+         productReference = "Miles::MilesTests::Product";
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      "Miles::MilesTests::Product" = {
+         isa = "PBXFileReference";
+         path = "MilesTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Miles::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_29";
+         buildPhases = (
+            "OBJ_32"
+         );
+         dependencies = (
+         );
+         name = "MilesPackageDescription";
+         productName = "MilesPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastSwiftMigration = "9999";
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "en";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en"
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_15";
+         projectDirPath = ".";
+         targets = (
+            "Miles::Miles",
+            "Miles::SwiftPMPackageDescription",
+            "Miles::MilesPackageTests::ProductTarget",
+            "Miles::MilesTests"
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXFileReference";
+         path = "Miles.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_11" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_12"
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_12" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_13",
+            "OBJ_14"
+         );
+         name = "MilesTests";
+         path = "Sources/MilesTests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_13" = {
+         isa = "PBXFileReference";
+         path = "Info.plist";
+         sourceTree = "<group>";
+      };
+      "OBJ_14" = {
+         isa = "PBXFileReference";
+         path = "MilesTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_15" = {
+         isa = "PBXGroup";
+         children = (
+            "Miles::MilesTests::Product",
+            "Miles::Miles::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_18" = {
+         isa = "PBXFileReference";
+         path = "LICENSE";
+         sourceTree = "<group>";
+      };
+      "OBJ_19" = {
+         isa = "PBXFileReference";
+         path = "Miles.podspec";
+         sourceTree = "<group>";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "PBXFileReference";
+         path = "README.mdown";
+         sourceTree = "<group>";
+      };
+      "OBJ_22" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_23",
+            "OBJ_24"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_23" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Miles.xcodeproj/Miles_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Miles";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Miles";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_24" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Miles.xcodeproj/Miles_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Miles";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Miles";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_25" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_26"
+         );
+      };
+      "OBJ_26" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_10";
+      };
+      "OBJ_27" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_29" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_30",
+            "OBJ_31"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1",
+               "DEBUG=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE",
+               "DEBUG"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.1"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_31" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.1"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_32" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_33"
+         );
+      };
+      "OBJ_33" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_35" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_36",
+            "OBJ_37"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_36" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_37" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_38" = {
+         isa = "PBXTargetDependency";
+         target = "Miles::MilesTests";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_40" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_41",
+            "OBJ_42"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_41" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Miles.xcodeproj/MilesTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "MilesTests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_42" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Miles.xcodeproj/MilesTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "MilesTests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_43" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_44"
+         );
+      };
+      "OBJ_44" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_14";
+      };
+      "OBJ_45" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_46"
+         );
+      };
+      "OBJ_46" = {
+         isa = "PBXBuildFile";
+         fileRef = "Miles::Miles::Product";
+      };
+      "OBJ_47" = {
+         isa = "PBXTargetDependency";
+         target = "Miles::Miles";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_11",
+            "OBJ_15",
+            "OBJ_18",
+            "OBJ_19",
+            "OBJ_20"
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8"
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9",
+            "OBJ_10"
+         );
+         name = "Miles";
+         path = "Sources/Miles";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "Miles.h";
+         sourceTree = "<group>";
+      };
+   };
+   rootObject = "OBJ_1";
 }

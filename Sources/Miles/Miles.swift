@@ -10,12 +10,12 @@ import XCTest
 import Foundation
 
 public extension Equatable {
-    public func shouldEqual(_ other: Self, file: StaticString = #file, line: UInt = #line) {
+    func shouldEqual(_ other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to equal \(other)"
         XCTAssertEqual(self, other, message, file: file, line: line)
     }
 
-    public func shouldEqual(_ other: Self?, file: StaticString = #file, line: UInt = #line) {
+    func shouldEqual(_ other: Self?, file: StaticString = #file, line: UInt = #line) {
         guard let other = other else {
             XCTFail("Expected other to be Non nil")
             return
@@ -25,46 +25,46 @@ public extension Equatable {
 }
 
 public extension Comparable {
-    public func shouldBeGreaterThan(_ other: Self, file: StaticString = #file, line: UInt = #line) {
+    func shouldBeGreaterThan(_ other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be greater than \(other)"
         XCTAssertGreaterThan(self, other, message)
     }
 
-    public func shouldBeGreaterThanOrEqual(to other: Self, file: StaticString = #file, line: UInt = #line) {
+    func shouldBeGreaterThanOrEqual(to other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be greater than or equal to \(other)"
         XCTAssertGreaterThanOrEqual(self, other, message)
     }
 
-    public func shouldBeLessThan(_ other: Self, file: StaticString = #file, line: UInt = #line) {
+    func shouldBeLessThan(_ other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be less than \(other)"
         XCTAssertLessThan(self, other, message)
     }
 
-    public func shouldBeLessThanOrEqual(to other: Self, file: StaticString = #file, line: UInt = #line) {
+    func shouldBeLessThanOrEqual(to other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be less than or Equal to \(other)"
         XCTAssertLessThanOrEqual(self, other, message)
     }
 }
 
 public extension FloatingPoint {
-    public func shouldBeClose(to other: Self, withAccuracy accuracy: Self, file: StaticString = #file, line: UInt = #line) {
+    func shouldBeClose(to other: Self, withAccuracy accuracy: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be within \(accuracy) of \(other)"
         XCTAssertEqual(self, other, accuracy: accuracy, message, file: file, line: line)
     }
 }
 
 public extension String {
-    public func shouldContain(_ string: String, file: StaticString = #file, line: UInt = #line) {
+    func shouldContain(_ string: String, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to contain \(string)"
         XCTAssertTrue(self.range(of: string) != nil, message, file: file, line: line)
     }
 
-    public func shouldHavePrefix(_ string: String, file: StaticString = #file, line: UInt = #line) {
+    func shouldHavePrefix(_ string: String, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to have a prefix of \(string)"
         XCTAssertTrue(self.hasPrefix(string), message, file: file, line: line)
     }
 
-    public func shouldHaveSuffix(_ string: String, file: StaticString = #file, line: UInt = #line) {
+    func shouldHaveSuffix(_ string: String, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to have a suffix of \(string)"
         XCTAssertTrue(self.hasSuffix(string), message, file: file, line: line)
     }
@@ -137,7 +137,7 @@ public extension Dictionary where Value: Equatable {
 }
 
 public extension Optional {
-    public func shouldBeNil(_ file: StaticString = #file, line: UInt = #line) {
+    func shouldBeNil(_ file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(String(describing: self)) to be nil"
         switch self {
         case .some:
@@ -147,7 +147,7 @@ public extension Optional {
         }
     }
 
-    public func shouldNotBeNil(_ file: StaticString = #file, line: UInt = #line) {
+    func shouldNotBeNil(_ file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(String(describing: self)) to not be nil"
         switch self {
         case .some:
@@ -159,7 +159,7 @@ public extension Optional {
 }
 
 public extension Optional where Wrapped: Equatable {
-    public func shouldEqual(_ other: Wrapped, file: StaticString = #file, line: UInt = #line) {
+    func shouldEqual(_ other: Wrapped, file: StaticString = #file, line: UInt = #line) {
         switch self {
         case (.some(let left)):
             let message = "Expected \(left) to equal \(other)"
@@ -169,7 +169,7 @@ public extension Optional where Wrapped: Equatable {
         }
     }
 
-    public func shouldEqual(_ other: Wrapped?, file: StaticString = #file, line: UInt = #line) {
+    func shouldEqual(_ other: Wrapped?, file: StaticString = #file, line: UInt = #line) {
         switch (self, other) {
         case (.some(let left), .some(let right)):
             let message = "Expected \(left) to equal \(right)"
