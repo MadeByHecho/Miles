@@ -36,7 +36,7 @@ It feels like every 6 months or so I hop on the Quick/Kiwi bandwagon (because of
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "https://github.com/MadeByHecho/Miles.git", :tag => "v2.1.0" }
+  s.source       = { :git => "https://github.com/MadeByHecho/Miles.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
