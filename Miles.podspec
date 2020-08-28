@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "Miles"
-  s.version      = "2.1.0"
+  s.version      = "2.3.0"
   s.summary      = "A thin wrapper around XCTest Marcos to make tests just a bit more readable."
   s.description  = <<-DESC
   Miles is a simple solution to an XCTest readability problem.
