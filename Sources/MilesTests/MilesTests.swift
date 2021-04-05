@@ -23,6 +23,10 @@ class StringTests: XCTestCase {
         string.shouldContain(darius)
     }
 
+    func testThatDoesNotContainIsTrueWhenPassingPartOfString() {
+        string.shouldNotContain("Rhodes")
+    }
+
     func testThatStringShouldHaveDarPrefix() {
         let prefix = "Dar"
         string.shouldHavePrefix(prefix)
@@ -176,6 +180,11 @@ class ArrayTests: XCTestCase {
         let array = [1, 2, 3, 4, 5]
         array.shouldContain(1)
     }
+
+    func testShouldNotContain() {
+        let array = [1, 2, 3]
+        array.shouldNotContain(4)
+    }
 }
 
 class DictionaryTests: XCTestCase {
@@ -187,6 +196,11 @@ class DictionaryTests: XCTestCase {
     func testShouldContain() {
         let dictionary = [1: "one", 2: "two"]
         dictionary.shouldContain("one")
+    }
+
+    func testShouldNotContain() {
+        let dictionary = [1: "one", 2: "two"]
+        dictionary.shouldNotContain("three")
     }
 }
 

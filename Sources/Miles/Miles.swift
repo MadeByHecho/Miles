@@ -59,6 +59,11 @@ public extension String {
         XCTAssertTrue(self.range(of: string) != nil, message, file: file, line: line)
     }
 
+    func shouldNotContain(_ string: String, file: StaticString = #file, line: UInt = #line) {
+        let message = "Expected \(self) to NOT contain \(string)"
+        XCTAssertTrue(self.range(of: string) == nil, message, file: file, line: line)
+    }
+
     func shouldHavePrefix(_ string: String, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to have a prefix of \(string)"
         XCTAssertTrue(self.hasPrefix(string), message, file: file, line: line)
@@ -117,6 +122,12 @@ public extension Sequence where Iterator.Element: Equatable {
         let contains = self.contains(item)
         XCTAssertTrue(contains, message, file: file, line: line)
     }
+
+    func shouldNotContain(_ item: Self.Iterator.Element, file: StaticString = #file, line: UInt = #line) {
+        let message = "Expected \(self) to NOT contain \(item)"
+        let contains = self.contains(item)
+        XCTAssertFalse(contains, message, file: file, line: line)
+    }
 }
 
 public extension Collection {
@@ -133,6 +144,14 @@ public extension Dictionary where Value: Equatable {
             value == item
         }
         XCTAssertTrue(contains, message, file: file, line: line)
+    }
+
+    func shouldNotContain(_ item: Value, file: StaticString = #file, line: UInt = #line) {
+        let message = "Expected \(self) to NOT contain \(item)"
+        let contains = self.contains { (_, value) -> Bool in
+            value == item
+        }
+        XCTAssertFalse(contains, message, file: file, line: line)
     }
 }
 
