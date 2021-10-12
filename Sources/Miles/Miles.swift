@@ -27,22 +27,22 @@ public extension Equatable {
 public extension Comparable {
     func shouldBeGreaterThan(_ other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be greater than \(other)"
-        XCTAssertGreaterThan(self, other, message)
+        XCTAssertGreaterThan(self, other, message, file: file, line: line)
     }
 
     func shouldBeGreaterThanOrEqual(to other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be greater than or equal to \(other)"
-        XCTAssertGreaterThanOrEqual(self, other, message)
+        XCTAssertGreaterThanOrEqual(self, other, message, file: file, line: line)
     }
 
     func shouldBeLessThan(_ other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be less than \(other)"
-        XCTAssertLessThan(self, other, message)
+        XCTAssertLessThan(self, other, message, file: file, line: line)
     }
 
     func shouldBeLessThanOrEqual(to other: Self, file: StaticString = #file, line: UInt = #line) {
         let message = "Expected \(self) to be less than or Equal to \(other)"
-        XCTAssertLessThanOrEqual(self, other, message)
+        XCTAssertLessThanOrEqual(self, other, message, file: file, line: line)
     }
 }
 
@@ -184,7 +184,7 @@ public extension Optional where Wrapped: Equatable {
             let message = "Expected \(left) to equal \(other)"
             XCTAssertEqual(self, other, message, file: file, line: line)
         default:
-            XCTFail("Exepcted \(String(describing: self)) to equal \(String(describing: other))")
+            XCTFail("Exepcted \(String(describing: self)) to equal \(String(describing: other))", file: file, line: line)
         }
     }
 
@@ -195,9 +195,9 @@ public extension Optional where Wrapped: Equatable {
             XCTAssertEqual(self, right, message, file: file, line: line)
         case (.none, .none):
             let message = "Expected nil to equal nil"
-            XCTAssertTrue(true, message)
+            XCTAssertTrue(true, message, file: file, line: line)
         default:
-            XCTFail("Exepcted \(String(describing: self)) to equal \(String(describing: other))")
+            XCTFail("Exepcted \(String(describing: self)) to equal \(String(describing: other))", file: file, line: line)
         }
     }
 }
